@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="category_m_u_photo_view(_private_a_p_i)" kind="category" prot="public">
+    <compoundname>MUPhotoView(PrivateAPI)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1388c653517c2cb50c9b7db51cd1b0786" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView(PrivateAPI)::updateGridAndFrame</definition>
+        <argsstring>()</argsstring>
+        <name>updateGridAndFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1ba13a4abb3ef0b3136b0cbbb795549c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned MUPhotoView(PrivateAPI)::photoCount</definition>
+        <argsstring>()</argsstring>
+        <name>photoCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1c03ef6e39fbe8fc232e873919cb7b6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSImage *</type>
+        <definition>NSImage * MUPhotoView(PrivateAPI)::photoAtIndex:</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>photoAtIndex:</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1216badab687f8e498c40a2690276297b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSSize</type>
+        <definition>NSSize MUPhotoView(PrivateAPI)::scaledPhotoSizeForSize:</definition>
+        <argsstring>(NSSize size)</argsstring>
+        <name>scaledPhotoSizeForSize:</name>
+        <param>
+          <type>NSSize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_189d2184cf8ebd06d67d04f375a6158b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSImage *</type>
+        <definition>NSImage * MUPhotoView(PrivateAPI)::scalePhoto:</definition>
+        <argsstring>(NSImage *image)</argsstring>
+        <name>scalePhoto:</name>
+        <param>
+          <type>NSImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_15fa898186d606870e4ae098c32be7479" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned MUPhotoView(PrivateAPI)::photoIndexForPoint:</definition>
+        <argsstring>(NSPoint point)</argsstring>
+        <name>photoIndexForPoint:</name>
+        <param>
+          <type>NSPoint</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="210"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_11081369330802f67d1c97c2517402b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRange</type>
+        <definition>NSRange MUPhotoView(PrivateAPI)::photoIndexRangeForRect:</definition>
+        <argsstring>(NSRect rect)</argsstring>
+        <name>photoIndexRangeForRect:</name>
+        <param>
+          <type>NSRect</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="211"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1518f83aaec26978737e26ebe3e7c587f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRect</type>
+        <definition>NSRect MUPhotoView(PrivateAPI)::gridRectForIndex:</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>gridRectForIndex:</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_179aa2698f3b556b6389b49da6059f3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRect</type>
+        <definition>NSRect MUPhotoView(PrivateAPI)::rectCenteredInRect:withSize:</definition>
+        <argsstring>(NSRect rect,[withSize] NSSize size)</argsstring>
+        <name>rectCenteredInRect:withSize:</name>
+        <param>
+          <type>NSRect</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <attributes>[withSize]</attributes>
+          <type>NSSize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="213"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1369a81f8ba346efa433c54b9d6ad0c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSRect</type>
+        <definition>NSRect MUPhotoView(PrivateAPI)::photoRectForIndex:</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>photoRectForIndex:</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="214"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1307ecf24c02a39d0ddf2fe22e80bea2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView(PrivateAPI)::isPhotoSelectedAtIndex:</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>isPhotoSelectedAtIndex:</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="217"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_1c4a4c11602c52617becf7feaf9382729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * MUPhotoView(PrivateAPI)::selectionIndexes</definition>
+        <argsstring>()</argsstring>
+        <name>selectionIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_16ee1e9c8db46ca53e9b0080b1733d77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView(PrivateAPI)::setSelectionIndexes:</definition>
+        <argsstring>(NSIndexSet *indexes)</argsstring>
+        <name>setSelectionIndexes:</name>
+        <param>
+          <type>NSIndexSet *</type>
+          <declname>indexes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="219"/>
+      </memberdef>
+      <memberdef kind="function" id="category_m_u_photo_view(_private_a_p_i)_108609f7bdb81eb24104057ca5a6ebdb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSBezierPath *</type>
+        <definition>NSBezierPath * MUPhotoView(PrivateAPI)::shadowBoxPathForRect:</definition>
+        <argsstring>(NSRect rect)</argsstring>
+        <name>shadowBoxPathForRect:</name>
+        <param>
+          <type>NSRect</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="198" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="198" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1518f83aaec26978737e26ebe3e7c587f" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>gridRectForIndex:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1307ecf24c02a39d0ddf2fe22e80bea2d" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>isPhotoSelectedAtIndex:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1c03ef6e39fbe8fc232e873919cb7b6ae" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>photoAtIndex:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1ba13a4abb3ef0b3136b0cbbb795549c7" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>photoCount</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_15fa898186d606870e4ae098c32be7479" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>photoIndexForPoint:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_11081369330802f67d1c97c2517402b4d" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>photoIndexRangeForRect:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1369a81f8ba346efa433c54b9d6ad0c01" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>photoRectForIndex:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_179aa2698f3b556b6389b49da6059f3b7" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>rectCenteredInRect:withSize:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1216badab687f8e498c40a2690276297b" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>scaledPhotoSizeForSize:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_189d2184cf8ebd06d67d04f375a6158b0" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>scalePhoto:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1c4a4c11602c52617becf7feaf9382729" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>selectionIndexes</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_16ee1e9c8db46ca53e9b0080b1733d77d" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>setSelectionIndexes:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_108609f7bdb81eb24104057ca5a6ebdb9" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>shadowBoxPathForRect:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1388c653517c2cb50c9b7db51cd1b0786" prot="public" virt="virtual"><scope>MUPhotoView(PrivateAPI)</scope><name>updateGridAndFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="class_n_s_object" kind="class" prot="public">
+    <compoundname>NSObject</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" line="1092" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="1092" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_13c401ecbd6bc8839e0886e4c672fbce6" prot="public" virt="virtual"><scope>NSObject</scope><name>pasteboardDragTypesForPhotoView:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_15012fd973adbcb5165b0a830b46100f0" prot="public" virt="virtual"><scope>NSObject</scope><name>photoCountForPhotoView:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1dc1847e0791f5e39310c5ca7b2caaef5" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:didSetSelectionIndexes:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1b1d5136ccafab5ba223ab0f7ac70842f" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:doubleClickOnPhotoAtIndex:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_142f4131dee120657b393067d35c7c771" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:draggingSourceOperationMaskForLocal:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_16087d843615018dd2c384958fc5efd09" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:pasteboardDataForPhotoAtIndex:dataType:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1f29adaf349861b6ab7c2b427114ab73d" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:photoAtIndex:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1cc75f4ee5d3ecd0c2c37c0b26f6bf08c" prot="public" virt="virtual"><scope>NSObject</scope><name>photoView:willSetSelectionIndexes:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1aba153f99799dc20969fd3538cbc92ea" prot="public" virt="virtual"><scope>NSObject</scope><name>selectionIndexesForPhotoView:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

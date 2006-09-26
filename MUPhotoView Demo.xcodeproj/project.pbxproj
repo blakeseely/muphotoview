@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28849C8809E32B58009F2B4F /* Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C6B09E32B58009F2B4F /* Blue.jpg */; };
+		28849C8909E32B58009F2B4F /* Bougainvillea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C6C09E32B58009F2B4F /* Bougainvillea.jpg */; };
+		28849C8A09E32B58009F2B4F /* Bricks. Market St, SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C6D09E32B58009F2B4F /* Bricks. Market St, SF.jpg */; };
+		28849C8B09E32B58009F2B4F /* Close up, 6th St., SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C6E09E32B58009F2B4F /* Close up, 6th St., SF.jpg */; };
+		28849C8C09E32B58009F2B4F /* evil look in his eye..jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C6F09E32B58009F2B4F /* evil look in his eye..jpg */; };
+		28849C8D09E32B58009F2B4F /* Graffiti, 8th St., SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7009E32B58009F2B4F /* Graffiti, 8th St., SF.jpg */; };
+		28849C8E09E32B58009F2B4F /* Graffiti, 8th St., SF_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7109E32B58009F2B4F /* Graffiti, 8th St., SF_2.jpg */; };
+		28849C8F09E32B58009F2B4F /* Gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7209E32B58009F2B4F /* Gray.jpg */; };
+		28849C9009E32B58009F2B4F /* Hall of Justice Service Station, Reflection.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7309E32B58009F2B4F /* Hall of Justice Service Station, Reflection.jpg */; };
+		28849C9109E32B58009F2B4F /* Mint Brick..jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7409E32B58009F2B4F /* Mint Brick..jpg */; };
+		28849C9209E32B58009F2B4F /* Mural at 24th & Guerrero, SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7509E32B58009F2B4F /* Mural at 24th & Guerrero, SF.jpg */; };
+		28849C9309E32B58009F2B4F /* Mural w: morning light splotches..jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7609E32B58009F2B4F /* Mural w: morning light splotches..jpg */; };
+		28849C9409E32B58009F2B4F /* Mural, 6th St., SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7709E32B58009F2B4F /* Mural, 6th St., SF.jpg */; };
+		28849C9509E32B58009F2B4F /* Mural, 6th St., SF_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C7809E32B58009F2B4F /* Mural, 6th St., SF_2.jpg */; };
+		28849CA109E32B58009F2B4F /* Textured Mural, 6th St., SF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C8409E32B58009F2B4F /* Textured Mural, 6th St., SF.jpg */; };
+		28849CA209E32B58009F2B4F /* Turkish Coffee..jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C8509E32B58009F2B4F /* Turkish Coffee..jpg */; };
+		28849CA309E32B58009F2B4F /* Turkish Coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C8609E32B58009F2B4F /* Turkish Coffee.jpg */; };
+		28849CA409E32B58009F2B4F /* Warning Pattern..jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28849C8709E32B58009F2B4F /* Warning Pattern..jpg */; };
+		28849CAA09E32C7B009F2B4F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28849CA909E32C7B009F2B4F /* AppController.m */; };
+		28C2917A09E200DB0019A948 /* MUPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C2917909E200DB0019A948 /* MUPhotoView.m */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504CCFFE6A4B311CA0CBA /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4A9504CDFFE6A4B311CA0CBA /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		28849C6B09E32B58009F2B4F /* Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blue.jpg; sourceTree = "<group>"; };
+		28849C6C09E32B58009F2B4F /* Bougainvillea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bougainvillea.jpg; sourceTree = "<group>"; };
+		28849C6D09E32B58009F2B4F /* Bricks. Market St, SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bricks. Market St, SF.jpg"; sourceTree = "<group>"; };
+		28849C6E09E32B58009F2B4F /* Close up, 6th St., SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Close up, 6th St., SF.jpg"; sourceTree = "<group>"; };
+		28849C6F09E32B58009F2B4F /* evil look in his eye..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "evil look in his eye..jpg"; sourceTree = "<group>"; };
+		28849C7009E32B58009F2B4F /* Graffiti, 8th St., SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Graffiti, 8th St., SF.jpg"; sourceTree = "<group>"; };
+		28849C7109E32B58009F2B4F /* Graffiti, 8th St., SF_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Graffiti, 8th St., SF_2.jpg"; sourceTree = "<group>"; };
+		28849C7209E32B58009F2B4F /* Gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gray.jpg; sourceTree = "<group>"; };
+		28849C7309E32B58009F2B4F /* Hall of Justice Service Station, Reflection.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hall of Justice Service Station, Reflection.jpg"; sourceTree = "<group>"; };
+		28849C7409E32B58009F2B4F /* Mint Brick..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mint Brick..jpg"; sourceTree = "<group>"; };
+		28849C7509E32B58009F2B4F /* Mural at 24th & Guerrero, SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mural at 24th & Guerrero, SF.jpg"; sourceTree = "<group>"; };
+		28849C7609E32B58009F2B4F /* Mural w: morning light splotches..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mural w: morning light splotches..jpg"; sourceTree = "<group>"; };
+		28849C7709E32B58009F2B4F /* Mural, 6th St., SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mural, 6th St., SF.jpg"; sourceTree = "<group>"; };
+		28849C7809E32B58009F2B4F /* Mural, 6th St., SF_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mural, 6th St., SF_2.jpg"; sourceTree = "<group>"; };
+		28849C8409E32B58009F2B4F /* Textured Mural, 6th St., SF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Textured Mural, 6th St., SF.jpg"; sourceTree = "<group>"; };
+		28849C8509E32B58009F2B4F /* Turkish Coffee..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Turkish Coffee..jpg"; sourceTree = "<group>"; };
+		28849C8609E32B58009F2B4F /* Turkish Coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Turkish Coffee.jpg"; sourceTree = "<group>"; };
+		28849C8709E32B58009F2B4F /* Warning Pattern..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Warning Pattern..jpg"; sourceTree = "<group>"; };
+		28849CA809E32C7B009F2B4F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		28849CA909E32C7B009F2B4F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		28C2917809E200DB0019A948 /* MUPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MUPhotoView.h; sourceTree = "<group>"; };
+		28C2917909E200DB0019A948 /* MUPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MUPhotoView.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MUPhotoView Demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MUPhotoView Demo_Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MUPhotoView Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MUPhotoView Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28849CA809E32C7B009F2B4F /* AppController.h */,
+				28849CA909E32C7B009F2B4F /* AppController.m */,
+				28C2917809E200DB0019A948 /* MUPhotoView.h */,
+				28C2917909E200DB0019A948 /* MUPhotoView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MUPhotoView Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28849C6A09E32B58009F2B4F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				28849C6B09E32B58009F2B4F /* Blue.jpg */,
+				28849C6C09E32B58009F2B4F /* Bougainvillea.jpg */,
+				28849C6D09E32B58009F2B4F /* Bricks. Market St, SF.jpg */,
+				28849C6E09E32B58009F2B4F /* Close up, 6th St., SF.jpg */,
+				28849C6F09E32B58009F2B4F /* evil look in his eye..jpg */,
+				28849C7009E32B58009F2B4F /* Graffiti, 8th St., SF.jpg */,
+				28849C7109E32B58009F2B4F /* Graffiti, 8th St., SF_2.jpg */,
+				28849C7209E32B58009F2B4F /* Gray.jpg */,
+				28849C7309E32B58009F2B4F /* Hall of Justice Service Station, Reflection.jpg */,
+				28849C7409E32B58009F2B4F /* Mint Brick..jpg */,
+				28849C7509E32B58009F2B4F /* Mural at 24th & Guerrero, SF.jpg */,
+				28849C7609E32B58009F2B4F /* Mural w: morning light splotches..jpg */,
+				28849C7709E32B58009F2B4F /* Mural, 6th St., SF.jpg */,
+				28849C7809E32B58009F2B4F /* Mural, 6th St., SF_2.jpg */,
+				28849C8409E32B58009F2B4F /* Textured Mural, 6th St., SF.jpg */,
+				28849C8509E32B58009F2B4F /* Turkish Coffee..jpg */,
+				28849C8609E32B58009F2B4F /* Turkish Coffee.jpg */,
+				28849C8709E32B58009F2B4F /* Warning Pattern..jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MUPhotoView Demo */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "MUPhotoView Demo";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MUPhotoView Demo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28849C6A09E32B58009F2B4F /* images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MUPhotoView Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MUPhotoView Demo" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+			};
+			dependencies = (
+			);
+			name = "MUPhotoView Demo";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "MUPhotoView Demo";
+			productReference = 8D1107320486CEB800E47090 /* MUPhotoView Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MUPhotoView Demo" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA /* Debug */,
+				4A9504CDFFE6A4B311CA0CBA /* Release */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MUPhotoView Demo */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MUPhotoView Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				28849C8809E32B58009F2B4F /* Blue.jpg in Resources */,
+				28849C8909E32B58009F2B4F /* Bougainvillea.jpg in Resources */,
+				28849C8A09E32B58009F2B4F /* Bricks. Market St, SF.jpg in Resources */,
+				28849C8B09E32B58009F2B4F /* Close up, 6th St., SF.jpg in Resources */,
+				28849C8C09E32B58009F2B4F /* evil look in his eye..jpg in Resources */,
+				28849C8D09E32B58009F2B4F /* Graffiti, 8th St., SF.jpg in Resources */,
+				28849C8E09E32B58009F2B4F /* Graffiti, 8th St., SF_2.jpg in Resources */,
+				28849C8F09E32B58009F2B4F /* Gray.jpg in Resources */,
+				28849C9009E32B58009F2B4F /* Hall of Justice Service Station, Reflection.jpg in Resources */,
+				28849C9109E32B58009F2B4F /* Mint Brick..jpg in Resources */,
+				28849C9209E32B58009F2B4F /* Mural at 24th & Guerrero, SF.jpg in Resources */,
+				28849C9309E32B58009F2B4F /* Mural w: morning light splotches..jpg in Resources */,
+				28849C9409E32B58009F2B4F /* Mural, 6th St., SF.jpg in Resources */,
+				28849C9509E32B58009F2B4F /* Mural, 6th St., SF_2.jpg in Resources */,
+				28849CA109E32B58009F2B4F /* Textured Mural, 6th St., SF.jpg in Resources */,
+				28849CA209E32B58009F2B4F /* Turkish Coffee..jpg in Resources */,
+				28849CA309E32B58009F2B4F /* Turkish Coffee.jpg in Resources */,
+				28849CA409E32B58009F2B4F /* Warning Pattern..jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				28C2917A09E200DB0019A948 /* MUPhotoView.m in Sources */,
+				28849CAA09E32C7B009F2B4F /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "MUPhotoView Demo";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "MUPhotoView Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MUPhotoView Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MUPhotoView Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

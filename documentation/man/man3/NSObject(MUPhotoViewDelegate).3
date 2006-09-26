@@ -1,0 +1,82 @@
+.TH "NSObject(MUPhotoViewDelegate)" 3 "17 Apr 2006" "Version 1.0" "MUPhotoView" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NSObject(MUPhotoViewDelegate) \- The MUPhotoViewDelegate category defines the methods that a \fBMUPhotoView\fP may call, and that you can use provide drag and drop, double-click, selection and even photo display support.  
+
+.PP
+.SH SYNOPSIS
+.br
+.PP
+\fC#import <MUPhotoView.h>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(unsigned) - \fBphotoCountForPhotoView:\fP"
+.br
+.ti -1c
+.RI "(NSImage *) - \fBphotoView:photoAtIndex:\fP"
+.br
+.ti -1c
+.RI "(NSIndexSet *) - \fBselectionIndexesForPhotoView:\fP"
+.br
+.ti -1c
+.RI "(NSIndexSet *) - \fBphotoView:willSetSelectionIndexes:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBphotoView:didSetSelectionIndexes:\fP"
+.br
+.ti -1c
+.RI "(unsigned int) - \fBphotoView:draggingSourceOperationMaskForLocal:\fP"
+.br
+.ti -1c
+.RI "(NSArray *) - \fBpasteboardDragTypesForPhotoView:\fP"
+.br
+.ti -1c
+.RI "(NSData *) - \fBphotoView:pasteboardDataForPhotoAtIndex:dataType:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBphotoView:doubleClickOnPhotoAtIndex:\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The MUPhotoViewDelegate category defines the methods that a \fBMUPhotoView\fP may call, and that you can use provide drag and drop, double-click, selection and even photo display support. 
+
+The MUPhotoViewDelegate category provides default implementations of all the methods the \fBMUPhotoView\fP may call. Overriding each of them is optional - the default implementations return no results, nil results, or zero as appropriate. 
+.PP
+.SH "Member Function Documentation"
+.PP 
+.SS "- (NSArray *) pasteboardDragTypesForPhotoView: (\fBMUPhotoView\fP *) view"
+.PP
+The view will call this method at drag time. The delegate should pass an array indicating the types that it will put on the pasteboard for a given set of images. If you provide an implementation for -photoView:draggingSourceOperationMaskForLocal: that returns anything other than NO, you should also implement this method and indicate which types you will support. 
+.SS "- (unsigned) photoCountForPhotoView: (\fBMUPhotoView\fP *) view"
+.PP
+The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @'photosArray' key, (b) -setPhotosArray: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. 
+.SS "- (void) photoView: (\fBMUPhotoView\fP *) view(NSIndexSet *) indexes"
+.PP
+The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @'photoSelectionIndexes' key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSEt, and (c) the delegate is not nil. The delegate should do whatever work necessary to mark the specified indexes as selected. (i.e. a subsequent call to -selectionIndexesForPhotoView: should most likely return this set or an identical one. 
+.SS "- (void) photoView: (\fBMUPhotoView\fP *) view(unsigned) index"
+.PP
+The view will call this delegate method when the user double-clicks on the photo at the specified index. If you do not wish to support any double-click behavior, then you don't need to override this method. 
+.SS "- (unsigned int) photoView: (\fBMUPhotoView\fP *) view(BOOL) isLocal"
+.PP
+A delegate would use this method to specify whether the view should support drag operations. (i.e. whether the view should allow photos to be dragged out of the view. The semantics are identical to the -[NSDraggingSource draggingSourceOperationmaskForLocal] 
+.SS "- (NSData *) photoView: (\fBMUPhotoView\fP *) view(unsigned) index(NSString *) type"
+.PP
+The view will call this method when it is about to initiate a drag. It will call this method once for *each* combination type returned from -pasteboardDragTypesForPhotoView: and each photo currently being dragged. The delegate should return the appropriate data for the given type. If you provide any implementation of -photoView:draggingSourceOperationMaskForLocal that returns anything other than NO, you should also implement this method. 
+.SS "- (NSImage *) photoView: (\fBMUPhotoView\fP *) view(unsigned) index"
+.PP
+The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @'photosArray' key, (b) -setPhotosArray: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. The delegate should return the NSImage appropriate to draw at the specified index. 
+.SS "- (NSIndexSet *) photoView: (\fBMUPhotoView\fP *) view(NSIndexSet *) indexes"
+.PP
+The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @'photoSelectionIndexes' key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSet, and (c) the delegate is not nil. If the delegate implements this method, it can modify the proposed selection and return an appropriate NSIndexSet. You should only implement this method if, for some reason, you want to manipulate or look at the selection indexes before the view marks them as selected. 
+.SS "- (NSIndexSet *) selectionIndexesForPhotoView: (\fBMUPhotoView\fP *) view"
+.PP
+The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @'photoSelectionIndexes' key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSet, and (c) the delegate is not nil. The delegate should return an NSIndexSet filled with indexes appropriately representing which photos should be drawn as 'selected' . 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MUPhotoView from the source code.

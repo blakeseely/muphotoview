@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="interface_m_u_photo_view" kind="class" prot="public">
+    <compoundname>MUPhotoView</compoundname>
+    <includes local="no">MUPhotoView.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_m_u_photo_view_142ea6448497fc60d50b59bad44f9f4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id MUPhotoView::delegate</definition>
+        <argsstring>()</argsstring>
+        <name>delegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current delegate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1d4f5e3701dcc2cd0430036e6a62112c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setDelegate:</definition>
+        <argsstring>(id del)</argsstring>
+        <name>setDelegate:</name>
+        <param>
+          <type>id</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the delegate. See the MUPhotoViewDelegate category for information about which delegate methods will get called and when. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="64" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="218" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1a78c8f83b51947a6b55a034e9b2fd3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * MUPhotoView::photosArray</definition>
+        <argsstring>()</argsstring>
+        <name>photosArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the array of NSImage objects that <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> is currently drawing from. If nothing has been bound to the &quot;photosArray&quot; key and there has not been a call to -setPhotosArray, then this will probably return nil. If this method returns nil, then at draw time, the <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> will attempt to ask its delegate for the count of photos and for photos at each index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_10f84566d69ca6b60ab49920abb5f9262" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setPhotosArray:</definition>
+        <argsstring>(NSArray *aPhotosArray)</argsstring>
+        <name>setPhotosArray:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>aPhotosArray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the array of NSImage objects that <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> uses to draw itself. If you call this method and pass nil, and the delegate is NOT nil, it will ask the delegate for the photos. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="75" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="235" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_127ec4fc46193b4d1cbfe2f5df4103534" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * MUPhotoView::selectedPhotoIndexes</definition>
+        <argsstring>()</argsstring>
+        <name>selectedPhotoIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current NSIndexSet indicating which photos are currently selected. If this is nil, then the view is asking its delegate for the selection index information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1b7bedf237f9e9128af3b015b2042ad7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setSelectedPhotoIndexes:</definition>
+        <argsstring>(NSIndexSet *aSelectedPhotoIndexes)</argsstring>
+        <name>setSelectedPhotoIndexes:</name>
+        <param>
+          <type>NSIndexSet *</type>
+          <declname>aSelectedPhotoIndexes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the NSIndexSet that the view will use to indicate which photos need to appear selected in the view. By setting this value to nil, <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> will ask the delegate for this information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="84" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="261" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1713e0c5b20ed70e405614b8b8702b26b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useBorderSelection</definition>
+        <argsstring>()</argsstring>
+        <name>useBorderSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the view is drawing &quot;selected&quot; photos with a 3px border around the photo. The appearnce is similar to iPhoto&apos;s selection style. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_16021c0bdb146665f5096e944a80ee908" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setUseBorderSelection:</definition>
+        <argsstring>(BOOL flag)</argsstring>
+        <name>setUseBorderSelection:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the view whether or not to indicated &quot;selected&quot; photos by drawing a 3px border around the photo. The appearnce is similar to iPhoto&apos;s selection style. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="93" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="284" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_179dc5ca057a4e0743951c4b30249acd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::selectionBorderColor</definition>
+        <argsstring>()</argsstring>
+        <name>selectionBorderColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current color that thew view is using to draw selection borders. If -useBorderSelection returns NO, it doesn&apos;t matter what color is returned from this method. The initial value for selectionBorderColor is the user&apos;s current selection color. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1be2bf039d1b75e7d9c75cc2093334a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setSelectionBorderColor:</definition>
+        <argsstring>(NSColor *aSelectionBorderColor)</argsstring>
+        <name>setSelectionBorderColor:</name>
+        <param>
+          <type>NSColor *</type>
+          <declname>aSelectionBorderColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the view what color border should be drawn around a &quot;selected&quot; photo. If -useBorderSelection returns NO, calling this method will not have any effect until -setUseBorderSelection:YES is callled. The selection border color defaults to the user&apos;s current selection color. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="99" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="300" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1919b33544e2380270e1304042df3b1e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useShadowSelection</definition>
+        <argsstring>()</argsstring>
+        <name>useShadowSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the view indicates &quot;selected&quot; photos by drawing a semi-transparent rounded box around the photo. The default value is NO. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1336789ce4ddaeb4078ad829f274cfff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setUseShadowSelection:</definition>
+        <argsstring>(BOOL flag)</argsstring>
+        <name>setUseShadowSelection:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>By setting this value to YES, you tell <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> to indicate a &quot;selected&quot; photo by drawing a semi-transparent rounded rectangle around the photo. The color and opacity of the rounded rectangle depend on the current background color of the view: for lighter colors, <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> will use a semi-transparent black; for darker colors, the color will be a semi-transparent white. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="105" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="317" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1330e1922d4c3045a40d6ab8df4f659fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useShadowBorder</definition>
+        <argsstring>()</argsstring>
+        <name>useShadowBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the view is drawing a drop-shadow around each photo. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_19547dbd8c247d3f976a14b60075e7052" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setUseShadowBorder:</definition>
+        <argsstring>(BOOL flag)</argsstring>
+        <name>setUseShadowBorder:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Passing YES to this method will cause the view to draw a drop shadow around each photo. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="113" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="337" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_12c28bd9d281167b75d75824910b75107" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useOutlineBorder</definition>
+        <argsstring>()</argsstring>
+        <name>useOutlineBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the view is currently set to draw a 1px, 50% white border around each photo. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_15e9fab8f2f9694656bcf206f320e58d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setUseOutlineBorder:</definition>
+        <argsstring>(BOOL flag)</argsstring>
+        <name>setUseOutlineBorder:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the view whether or not to draw a 1px, 50% white border around each photo. The default value is YES. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="117" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="353" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_174c76236d682feceb6feb79225512959" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::backgroundColor</definition>
+        <argsstring>()</argsstring>
+        <name>backgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current color being used to paint the background before drawing photos. The default value is [NSColor whiteColor]. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_18fdc07962b9b4940574851faef31acf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setBackgroundColor:</definition>
+        <argsstring>(NSColor *aBackgroundColor)</argsstring>
+        <name>setBackgroundColor:</name>
+        <param>
+          <type>NSColor *</type>
+          <declname>aBackgroundColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the view to use a new color when drawing the background. If -useShadowSelection is YES, updating the background color may also affect the color being used to draw the shadow selection indicator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="122" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="369" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1c954b3f084c1abc56dda047a9a350b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float MUPhotoView::photoSize</definition>
+        <argsstring>()</argsstring>
+        <name>photoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current pixel size that photos are scaled to. When drawing, a photo is scalled proportionately so it&apos;s longest side is this number of pixels. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_18c44b496107042511a4369253722dae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setPhotoSize:</definition>
+        <argsstring>(float aPhotoSize)</argsstring>
+        <name>setPhotoSize:</name>
+        <param>
+          <type>float</type>
+          <declname>aPhotoSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells the view to draw photos scaled so their longest side is aPhotoSize pixels long. This will cause the visible area of the view to be redrawn - and the view will attempt to keep the currently-visible photos near the center of the scroll area. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="127" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="403" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1af973389f0227f2fcdc9521944fee50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float MUPhotoView::photoVerticalSpacing</definition>
+        <argsstring>()</argsstring>
+        <name>photoVerticalSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1e0829db86c5b88e2f689bb8e654cfe0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setPhotoVerticalSpacing:</definition>
+        <argsstring>(float aPhotoVerticalSpacing)</argsstring>
+        <name>setPhotoVerticalSpacing:</name>
+        <param>
+          <type>float</type>
+          <declname>aPhotoVerticalSpacing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="134" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="433" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1ddd75d8141a21c86d3fd4f7c1ba9e90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float MUPhotoView::photoHorizontalSpacing</definition>
+        <argsstring>()</argsstring>
+        <name>photoHorizontalSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_198d1399019cb4ea43e2e13c24e16fba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setPhotoHorizontalSpacing:</definition>
+        <argsstring>(float aPhotoHorizontalSpacing)</argsstring>
+        <name>setPhotoHorizontalSpacing:</name>
+        <param>
+          <type>float</type>
+          <declname>aPhotoHorizontalSpacing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="136" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="455" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_19fd96a8dec2aec5d42901fad630470f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::borderOutlineColor</definition>
+        <argsstring>()</argsstring>
+        <name>borderOutlineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_17e80094f20a6fd3cc23f4ae313761b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setBorderOutlineColor:</definition>
+        <argsstring>(NSColor *aBorderOutlineColor)</argsstring>
+        <name>setBorderOutlineColor:</name>
+        <param>
+          <type>NSColor *</type>
+          <declname>aBorderOutlineColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="138" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="478" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1e4db0f47a0dea53bf37b3cbf06d674ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::shadowBoxColor</definition>
+        <argsstring>()</argsstring>
+        <name>shadowBoxColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1ae64d80955b156d3858913fa4f7e64c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setShadowBoxColor:</definition>
+        <argsstring>(NSColor *aShadowBoxColor)</argsstring>
+        <name>setShadowBoxColor:</name>
+        <param>
+          <type>NSColor *</type>
+          <declname>aShadowBoxColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="140" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="497" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_1812d9cac577383425c067e3f47f3d729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float MUPhotoView::selectionBorderWidth</definition>
+        <argsstring>()</argsstring>
+        <name>selectionBorderWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_m_u_photo_view_194805f391f5dc8ce1292e1d60c806198" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MUPhotoView::setSelectionBorderWidth:</definition>
+        <argsstring>(float aSelectionBorderWidth)</argsstring>
+        <name>setSelectionBorderWidth:</name>
+        <param>
+          <type>float</type>
+          <declname>aSelectionBorderWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="142" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m" bodystart="514" bodyend="518"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_m_u_photo_view_18be58626d0985db888976cff4ce9a46c" prot="protected" static="no" mutable="no">
+        <type>IBOutlet id</type>
+        <definition>id MUPhotoView::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="19" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_13b6e90817e7781d4888f029020802274" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::sendsLiveSelectionUpdates</definition>
+        <argsstring></argsstring>
+        <name>sendsLiveSelectionUpdates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="21" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_18d6bfcfeac47486d566bb9e00836d26d" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useHighQualityResize</definition>
+        <argsstring></argsstring>
+        <name>useHighQualityResize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="22" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1af537f10b94ae728be9a0b40383d7d5d" prot="protected" static="no" mutable="no">
+        <type>NSArray *</type>
+        <definition>NSArray * MUPhotoView::photosArray</definition>
+        <argsstring></argsstring>
+        <name>photosArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="24" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_158b488be868c10a671f72ca6b24cb52a" prot="protected" static="no" mutable="no">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * MUPhotoView::selectedPhotoIndexes</definition>
+        <argsstring></argsstring>
+        <name>selectedPhotoIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="25" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1369997dc992e3ad619979d080f842347" prot="protected" static="no" mutable="no">
+        <type>NSMutableIndexSet *</type>
+        <definition>NSMutableIndexSet* MUPhotoView::dragSelectedPhotoIndexes</definition>
+        <argsstring></argsstring>
+        <name>dragSelectedPhotoIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="26" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_174659f97938ff9b8ac388c87446d6741" prot="protected" static="no" mutable="no">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::backgroundColor</definition>
+        <argsstring></argsstring>
+        <name>backgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="28" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_19a3a003a3d0d8f3988dbdca79ad1ff04" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useShadowBorder</definition>
+        <argsstring></argsstring>
+        <name>useShadowBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="29" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1ea90b910a97101c554345ae8ed935fd9" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useOutlineBorder</definition>
+        <argsstring></argsstring>
+        <name>useOutlineBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="30" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_156e331ee57ea8709a2262594d09715a2" prot="protected" static="no" mutable="no">
+        <type>NSShadow *</type>
+        <definition>NSShadow* MUPhotoView::borderShadow</definition>
+        <argsstring></argsstring>
+        <name>borderShadow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="31" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_150c6ad500894deb8c6de39f5b07141da" prot="protected" static="no" mutable="no">
+        <type>NSShadow *</type>
+        <definition>NSShadow* MUPhotoView::noShadow</definition>
+        <argsstring></argsstring>
+        <name>noShadow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="32" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_105dde1ff4cb9f2ebf862ba51419f7cd9" prot="protected" static="no" mutable="no">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::borderOutlineColor</definition>
+        <argsstring></argsstring>
+        <name>borderOutlineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="33" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1ad3b4ef9717616e70eab6eac7dca6b53" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useBorderSelection</definition>
+        <argsstring></argsstring>
+        <name>useBorderSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="35" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1b8bd4c590574292b22d6296ea0d65c70" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::useShadowSelection</definition>
+        <argsstring></argsstring>
+        <name>useShadowSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="36" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_150043c2ac976454f2bacebb5a9dd1b88" prot="protected" static="no" mutable="no">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::selectionBorderColor</definition>
+        <argsstring></argsstring>
+        <name>selectionBorderColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="37" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_15f7154d6dcbf0539ac296127da2f5a45" prot="protected" static="no" mutable="no">
+        <type>NSColor *</type>
+        <definition>NSColor * MUPhotoView::shadowBoxColor</definition>
+        <argsstring></argsstring>
+        <name>shadowBoxColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="38" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_11382b40196ad2b298020d1f089508ea1" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MUPhotoView::selectionBorderWidth</definition>
+        <argsstring></argsstring>
+        <name>selectionBorderWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="39" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1d115f70b574a42f9e775b14d9b936e26" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MUPhotoView::photoSize</definition>
+        <argsstring></argsstring>
+        <name>photoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="42" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_116b4e7cb8dd099c53d18d396f4807ffa" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MUPhotoView::photoVerticalSpacing</definition>
+        <argsstring></argsstring>
+        <name>photoVerticalSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="43" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_109f06db450e3d548f6c3f805439022dd" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MUPhotoView::photoHorizontalSpacing</definition>
+        <argsstring></argsstring>
+        <name>photoHorizontalSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="44" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1ac7677684dc7cbabd6b483dd3fd64135" prot="protected" static="no" mutable="no">
+        <type>NSSize</type>
+        <definition>NSSize MUPhotoView::gridSize</definition>
+        <argsstring></argsstring>
+        <name>gridSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="47" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1ce6b85f347989246d12f8e57b94f0e71" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned MUPhotoView::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="48" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1f6a1c58dab65a551ec0b6044a2235dc3" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned MUPhotoView::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="49" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_175c85bd3c661f04bff6cb512865604e0" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::mouseDown</definition>
+        <argsstring></argsstring>
+        <name>mouseDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="51" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1a417391d0cb71d0b44cc1c8773d54f8f" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL MUPhotoView::potentialDragDrop</definition>
+        <argsstring></argsstring>
+        <name>potentialDragDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="52" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_174ecf1519fde9d979d1c45d32050067f" prot="protected" static="no" mutable="no">
+        <type>NSPoint</type>
+        <definition>NSPoint MUPhotoView::mouseDownPoint</definition>
+        <argsstring></argsstring>
+        <name>mouseDownPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="53" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_1a5ce1a67707666719e15759709c2d0d8" prot="protected" static="no" mutable="no">
+        <type>NSPoint</type>
+        <definition>NSPoint MUPhotoView::mouseCurrentPoint</definition>
+        <argsstring></argsstring>
+        <name>mouseCurrentPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="54" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_u_photo_view_18aaaa557359a3d540e15463748cc5f51" prot="protected" static="no" mutable="no">
+        <type>NSTimer *</type>
+        <definition>NSTimer* MUPhotoView::autoscrollTimer</definition>
+        <argsstring></argsstring>
+        <name>autoscrollTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="55" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> displays a grid of photos similar to iPhoto&apos;s main photo view. The class gives developers several options for providing images - via bindings or delegation. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> displays a resizeable grid of photos, similar to iPhoto&apos;s photo view functionality. <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> provides developers with two different options for passing photo information to the view Most importantly, <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> currently only deals with an array of photos. It does not yet know how to display titles or any other metadata. It also does not know how to find NSImage objects that are inside another object - it expects NSImage objects. The first method for providing those objects it by binding an array of NSImage objects to the &quot;photosArray&quot; key of the view. If this key has been bound, <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> will fetch all the images it displays from that binding. The second method is to have a delegate object provide the photos. <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> will only call the delegate&apos;s photo methods if the photosArray key has not been bound. Please see the MUPhotoViewDelegate category documentation for descriptions of the methods. </para>    </detaileddescription>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="17" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="17" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_m_u_photo_view_18aaaa557359a3d540e15463748cc5f51" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>autoscrollTimer</name></member>
+      <member refid="interface_m_u_photo_view_174659f97938ff9b8ac388c87446d6741" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>backgroundColor</name></member>
+      <member refid="interface_m_u_photo_view_174c76236d682feceb6feb79225512959" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>backgroundColor</name></member>
+      <member refid="interface_m_u_photo_view_105dde1ff4cb9f2ebf862ba51419f7cd9" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>borderOutlineColor</name></member>
+      <member refid="interface_m_u_photo_view_19fd96a8dec2aec5d42901fad630470f2" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>borderOutlineColor</name></member>
+      <member refid="interface_m_u_photo_view_156e331ee57ea8709a2262594d09715a2" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>borderShadow</name></member>
+      <member refid="interface_m_u_photo_view_1ce6b85f347989246d12f8e57b94f0e71" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>columns</name></member>
+      <member refid="interface_m_u_photo_view_18be58626d0985db888976cff4ce9a46c" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>delegate</name></member>
+      <member refid="interface_m_u_photo_view_142ea6448497fc60d50b59bad44f9f4f3" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>delegate</name></member>
+      <member refid="interface_m_u_photo_view_1369997dc992e3ad619979d080f842347" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>dragSelectedPhotoIndexes</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1518f83aaec26978737e26ebe3e7c587f" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>gridRectForIndex:</name></member>
+      <member refid="interface_m_u_photo_view_1ac7677684dc7cbabd6b483dd3fd64135" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>gridSize</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1307ecf24c02a39d0ddf2fe22e80bea2d" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>isPhotoSelectedAtIndex:</name></member>
+      <member refid="interface_m_u_photo_view_1a5ce1a67707666719e15759709c2d0d8" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>mouseCurrentPoint</name></member>
+      <member refid="interface_m_u_photo_view_175c85bd3c661f04bff6cb512865604e0" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>mouseDown</name></member>
+      <member refid="interface_m_u_photo_view_174ecf1519fde9d979d1c45d32050067f" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>mouseDownPoint</name></member>
+      <member refid="interface_m_u_photo_view_150c6ad500894deb8c6de39f5b07141da" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>noShadow</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1c03ef6e39fbe8fc232e873919cb7b6ae" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoAtIndex:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1ba13a4abb3ef0b3136b0cbbb795549c7" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoCount</name></member>
+      <member refid="interface_m_u_photo_view_109f06db450e3d548f6c3f805439022dd" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>photoHorizontalSpacing</name></member>
+      <member refid="interface_m_u_photo_view_1ddd75d8141a21c86d3fd4f7c1ba9e90d" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoHorizontalSpacing</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_15fa898186d606870e4ae098c32be7479" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoIndexForPoint:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_11081369330802f67d1c97c2517402b4d" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoIndexRangeForRect:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1369a81f8ba346efa433c54b9d6ad0c01" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoRectForIndex:</name></member>
+      <member refid="interface_m_u_photo_view_1af537f10b94ae728be9a0b40383d7d5d" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>photosArray</name></member>
+      <member refid="interface_m_u_photo_view_1a78c8f83b51947a6b55a034e9b2fd3fe" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photosArray</name></member>
+      <member refid="interface_m_u_photo_view_1d115f70b574a42f9e775b14d9b936e26" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>photoSize</name></member>
+      <member refid="interface_m_u_photo_view_1c954b3f084c1abc56dda047a9a350b7d" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoSize</name></member>
+      <member refid="interface_m_u_photo_view_116b4e7cb8dd099c53d18d396f4807ffa" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>photoVerticalSpacing</name></member>
+      <member refid="interface_m_u_photo_view_1af973389f0227f2fcdc9521944fee50f" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>photoVerticalSpacing</name></member>
+      <member refid="interface_m_u_photo_view_1a417391d0cb71d0b44cc1c8773d54f8f" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>potentialDragDrop</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_179aa2698f3b556b6389b49da6059f3b7" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>rectCenteredInRect:withSize:</name></member>
+      <member refid="interface_m_u_photo_view_1f6a1c58dab65a551ec0b6044a2235dc3" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>rows</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1216badab687f8e498c40a2690276297b" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>scaledPhotoSizeForSize:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_189d2184cf8ebd06d67d04f375a6158b0" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>scalePhoto:</name></member>
+      <member refid="interface_m_u_photo_view_158b488be868c10a671f72ca6b24cb52a" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>selectedPhotoIndexes</name></member>
+      <member refid="interface_m_u_photo_view_127ec4fc46193b4d1cbfe2f5df4103534" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>selectedPhotoIndexes</name></member>
+      <member refid="interface_m_u_photo_view_150043c2ac976454f2bacebb5a9dd1b88" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>selectionBorderColor</name></member>
+      <member refid="interface_m_u_photo_view_179dc5ca057a4e0743951c4b30249acd5" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>selectionBorderColor</name></member>
+      <member refid="interface_m_u_photo_view_11382b40196ad2b298020d1f089508ea1" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>selectionBorderWidth</name></member>
+      <member refid="interface_m_u_photo_view_1812d9cac577383425c067e3f47f3d729" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>selectionBorderWidth</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1c4a4c11602c52617becf7feaf9382729" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>selectionIndexes</name></member>
+      <member refid="interface_m_u_photo_view_13b6e90817e7781d4888f029020802274" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>sendsLiveSelectionUpdates</name></member>
+      <member refid="interface_m_u_photo_view_18fdc07962b9b4940574851faef31acf4" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setBackgroundColor:</name></member>
+      <member refid="interface_m_u_photo_view_17e80094f20a6fd3cc23f4ae313761b3e" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setBorderOutlineColor:</name></member>
+      <member refid="interface_m_u_photo_view_1d4f5e3701dcc2cd0430036e6a62112c8" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setDelegate:</name></member>
+      <member refid="interface_m_u_photo_view_198d1399019cb4ea43e2e13c24e16fba0" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setPhotoHorizontalSpacing:</name></member>
+      <member refid="interface_m_u_photo_view_10f84566d69ca6b60ab49920abb5f9262" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setPhotosArray:</name></member>
+      <member refid="interface_m_u_photo_view_18c44b496107042511a4369253722dae9" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setPhotoSize:</name></member>
+      <member refid="interface_m_u_photo_view_1e0829db86c5b88e2f689bb8e654cfe0f" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setPhotoVerticalSpacing:</name></member>
+      <member refid="interface_m_u_photo_view_1b7bedf237f9e9128af3b015b2042ad7a" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setSelectedPhotoIndexes:</name></member>
+      <member refid="interface_m_u_photo_view_1be2bf039d1b75e7d9c75cc2093334a1e" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setSelectionBorderColor:</name></member>
+      <member refid="interface_m_u_photo_view_194805f391f5dc8ce1292e1d60c806198" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setSelectionBorderWidth:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_16ee1e9c8db46ca53e9b0080b1733d77d" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setSelectionIndexes:</name></member>
+      <member refid="interface_m_u_photo_view_1ae64d80955b156d3858913fa4f7e64c7" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setShadowBoxColor:</name></member>
+      <member refid="interface_m_u_photo_view_16021c0bdb146665f5096e944a80ee908" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setUseBorderSelection:</name></member>
+      <member refid="interface_m_u_photo_view_15e9fab8f2f9694656bcf206f320e58d4" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setUseOutlineBorder:</name></member>
+      <member refid="interface_m_u_photo_view_19547dbd8c247d3f976a14b60075e7052" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setUseShadowBorder:</name></member>
+      <member refid="interface_m_u_photo_view_1336789ce4ddaeb4078ad829f274cfff5" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>setUseShadowSelection:</name></member>
+      <member refid="interface_m_u_photo_view_15f7154d6dcbf0539ac296127da2f5a45" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>shadowBoxColor</name></member>
+      <member refid="interface_m_u_photo_view_1e4db0f47a0dea53bf37b3cbf06d674ba" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>shadowBoxColor</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_108609f7bdb81eb24104057ca5a6ebdb9" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>shadowBoxPathForRect:</name></member>
+      <member refid="category_m_u_photo_view(_private_a_p_i)_1388c653517c2cb50c9b7db51cd1b0786" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>updateGridAndFrame</name></member>
+      <member refid="interface_m_u_photo_view_1ad3b4ef9717616e70eab6eac7dca6b53" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>useBorderSelection</name></member>
+      <member refid="interface_m_u_photo_view_1713e0c5b20ed70e405614b8b8702b26b" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>useBorderSelection</name></member>
+      <member refid="interface_m_u_photo_view_18d6bfcfeac47486d566bb9e00836d26d" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>useHighQualityResize</name></member>
+      <member refid="interface_m_u_photo_view_1ea90b910a97101c554345ae8ed935fd9" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>useOutlineBorder</name></member>
+      <member refid="interface_m_u_photo_view_12c28bd9d281167b75d75824910b75107" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>useOutlineBorder</name></member>
+      <member refid="interface_m_u_photo_view_19a3a003a3d0d8f3988dbdca79ad1ff04" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>useShadowBorder</name></member>
+      <member refid="interface_m_u_photo_view_1330e1922d4c3045a40d6ab8df4f659fd" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>useShadowBorder</name></member>
+      <member refid="interface_m_u_photo_view_1b8bd4c590574292b22d6296ea0d65c70" prot="protected" virt="non-virtual"><scope>MUPhotoView</scope><name>useShadowSelection</name></member>
+      <member refid="interface_m_u_photo_view_1919b33544e2380270e1304042df3b1e0" prot="public" virt="virtual"><scope>MUPhotoView</scope><name>useShadowSelection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

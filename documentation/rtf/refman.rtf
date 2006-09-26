@@ -1,0 +1,4167 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment {\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Reference{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Manual{\comment RTFDocVisitor::visitPost(DocText)}
+ {\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+1.0{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}MUPhotoView}
+{\comment {\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Generated{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+by{\comment RTFDocVisitor::visitPost(DocText)}
+Doxgyen. }
+{\creatim \yr2006\mo4\dy17\hr20\min59\sec50}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Hierarchical{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Index{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Hierarchy{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+This{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+inheritance{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+list{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+sorted{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+roughly{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+but{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+completely{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+alphabetically{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visitPost(DocText)}
+}
+{
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+MUPhotoView\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+NSObject(MUPhotoViewDelegate)\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Index{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+List{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Here{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+classes{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+structs{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+unions{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+interfaces{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+with{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+brief{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+descriptions{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visitPost(DocText)}
+}
+{
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+\par
+{\b {\b MUPhotoView} ({\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+displays{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+grid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+main{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+gives{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+developers{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+several{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+options{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+providing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+images{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+via{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bindings{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b NSObject(MUPhotoViewDelegate)} ({\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+defines{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+may{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+can{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drop{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+double-click{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+even{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+display{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par
+}\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Documentation{\comment RTFDocVisitor::visitPost(DocText)}
+{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoView{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Reference{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{\tc\tcl2 \v MUPhotoView}
+{\xe \v MUPhotoView}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+displays{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+grid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+main{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+gives{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+developers{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+several{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+options{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+providing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+images{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+via{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bindings{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegation{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+} 
+{\f2 #import <MUPhotoView.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Public{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Member{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Functions{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(id) - {\b delegate}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setDelegate:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSArray *) - {\b photosArray}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setPhotosArray:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSIndexSet *) - {\b selectedPhotoIndexes}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setSelectedPhotoIndexes:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(BOOL) - {\b useBorderSelection}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setUseBorderSelection:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSColor *) - {\b selectionBorderColor}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setSelectionBorderColor:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(BOOL) - {\b useShadowSelection}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setUseShadowSelection:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(BOOL) - {\b useShadowBorder}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setUseShadowBorder:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(BOOL) - {\b useOutlineBorder}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setUseOutlineBorder:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSColor *) - {\b backgroundColor}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setBackgroundColor:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(float) - {\b photoSize}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b setPhotoSize:}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Detailed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Description{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+displays{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+grid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+main{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+gives{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+developers{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+several{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+options{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+providing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+images{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+via{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bindings{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegation{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}\par
+\par
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+displays{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+resizeable{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+grid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+functionality{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provides{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+developers{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+with{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+two{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+different{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+options{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+information{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Most{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+importantly{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+only{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+deals{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+with{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+It{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+does{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+yet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+know{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+how{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+display{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+titles{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+any{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+other{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+metadata{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+It{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+also{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+does{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+know{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+how{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+find{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+inside{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+another{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+object{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+expects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+first{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+providing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+those{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+by{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+binding{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"photosArray"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+fetch{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+images{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+displays{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+binding{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+second{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+have{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+object{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+only{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photosArray{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Please{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+see{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+documentation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+descriptions{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Member{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Function{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Documentation{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+{\xe \v backgroundColor\:MUPhotoView}
+{\xe \v MUPhotoView\:backgroundColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSColor *) backgroundColor }
+}\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+being{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+used{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+paint{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+background{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+before{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+[{\comment RTFDocVisitor::visit(DocWord)}
+NSColor{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whiteColor{\comment RTFDocVisitor::visit(DocWord)}
+]{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v delegate\:MUPhotoView}
+{\xe \v MUPhotoView\:delegate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (id) delegate }
+}\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photosArray\:MUPhotoView}
+{\xe \v MUPhotoView\:photosArray}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSArray *) photosArray }
+}\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nothing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"photosArray"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+there{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotosArray{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+then{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+probably{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+then{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+time{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+attempt{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+ask{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+its{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+count{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+index{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoSize\:MUPhotoView}
+{\xe \v MUPhotoView\:photoSize}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (float) photoSize }
+}\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pixel{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+size{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+scaled{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+When{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+scalled{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+proportionately{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+so{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+longest{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+side{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+number{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pixels{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v selectedPhotoIndexes\:MUPhotoView}
+{\xe \v MUPhotoView\:selectedPhotoIndexes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSIndexSet *) selectedPhotoIndexes }
+}\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicating{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+which{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selected{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+then{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+asking{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+its{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+index{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+information{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v selectionBorderColor\:MUPhotoView}
+{\xe \v MUPhotoView\:selectionBorderColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSColor *) selectionBorderColor }
+}\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+thew{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+using{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+borders{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-useBorderSelection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NO{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+doesn't{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+matter{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+what{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returned{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+initial{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selectionBorderColor{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+user's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setBackgroundColor:\:MUPhotoView}
+{\xe \v MUPhotoView\:setBackgroundColor:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setBackgroundColor: (NSColor *) {\i aBackgroundColor}}
+}\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Tells{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+new{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+when{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+background{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-useShadowSelection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+updating{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+background{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+may{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+also{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+affect{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+being{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+used{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+shadow{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicator{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setDelegate:\:MUPhotoView}
+{\xe \v MUPhotoView\:setDelegate:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setDelegate: (id) {\i del}}
+}\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Sets{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+See{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+information{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+about{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+which{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+get{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+when{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setPhotosArray:\:MUPhotoView}
+{\xe \v MUPhotoView\:setPhotosArray:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setPhotosArray: (NSArray *) {\i aPhotosArray}}
+}\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Sets{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+uses{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+itself{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pass{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NOT{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+ask{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setPhotoSize:\:MUPhotoView}
+{\xe \v MUPhotoView\:setPhotoSize:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setPhotoSize: (float) {\i aPhotoSize}}
+}\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Tells{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+scaled{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+so{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+their{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+longest{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+side{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+aPhotoSize{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pixels{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+long{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+This{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+cause{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+visible{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+area{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+be{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+redrawn{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+attempt{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+keep{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently-visible{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+near{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+center{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+scroll{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+area{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setSelectedPhotoIndexes:\:MUPhotoView}
+{\xe \v MUPhotoView\:setSelectedPhotoIndexes:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setSelectedPhotoIndexes: (NSIndexSet *) {\i aSelectedPhotoIndexes}}
+}\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Sets{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+which{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+need{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appear{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selected{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+in{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+By{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+setting{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+ask{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+information{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setSelectionBorderColor:\:MUPhotoView}
+{\xe \v MUPhotoView\:setSelectionBorderColor:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setSelectionBorderColor: (NSColor *) {\i aSelectionBorderColor}}
+}\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Tells{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+what{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+be{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawn{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-useBorderSelection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NO{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+calling{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+have{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+any{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+effect{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+until{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setUseBorderSelection{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+callled{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+defaults{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+user's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setUseBorderSelection:\:MUPhotoView}
+{\xe \v MUPhotoView\:setUseBorderSelection:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setUseBorderSelection: (BOOL) {\i flag}}
+}\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Tells{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicated{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+by{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+3px{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appearnce{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+style{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setUseOutlineBorder:\:MUPhotoView}
+{\xe \v MUPhotoView\:setUseOutlineBorder:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setUseOutlineBorder: (BOOL) {\i flag}}
+}\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Tells{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+1px{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+50{\comment RTFDocVisitor::visit(DocSymbol)}
+%{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+white{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setUseShadowBorder:\:MUPhotoView}
+{\xe \v MUPhotoView\:setUseShadowBorder:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setUseShadowBorder: (BOOL) {\i flag}}
+}\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Passing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+cause{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drop{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+shadow{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v setUseShadowSelection:\:MUPhotoView}
+{\xe \v MUPhotoView\:setUseShadowSelection:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) setUseShadowSelection: (BOOL) {\i flag}}
+}\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+By{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+setting{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+tell{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+by{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+semi-transparent{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+rounded{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+rectangle{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+opacity{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+rounded{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+rectangle{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+depend{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+on{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+current{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+background{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+lighter{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+colors{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+semi-transparent{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+black{\comment RTFDocVisitor::visit(DocWord)}
+;{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+darker{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+colors{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+color{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+be{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+semi-transparent{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+white{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v useBorderSelection\:MUPhotoView}
+{\xe \v MUPhotoView\:useBorderSelection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (BOOL) useBorderSelection }
+}\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Indicates{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+with{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+3px{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appearnce{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+similar{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+iPhoto's{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+style{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v useOutlineBorder\:MUPhotoView}
+{\xe \v MUPhotoView\:useOutlineBorder}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (BOOL) useOutlineBorder }
+}\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Indicates{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+set{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+1px{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+50{\comment RTFDocVisitor::visit(DocSymbol)}
+%{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+white{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+border{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v useShadowBorder\:MUPhotoView}
+{\xe \v MUPhotoView\:useShadowBorder}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (BOOL) useShadowBorder }
+}\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Indicates{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drop-shadow{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+YES{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v useShadowSelection\:MUPhotoView}
+{\xe \v MUPhotoView\:useShadowSelection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (BOOL) useShadowSelection }
+}\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Indicates{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicates{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+by{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+semi-transparent{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+rounded{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+box{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+around{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+value{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NO{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+documentation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+class{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+was{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+generated{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+files{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visitPost(DocText)}
+{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.m\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+NSObject{\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Reference{\comment RTFDocVisitor::visitPost(DocText)}
+\par \pard\plain 
+{\tc\tcl2 \v NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+defines{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+may{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+can{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drop{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+double-click{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+even{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+display{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+} 
+{\f2 #import <MUPhotoView.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Public{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Member{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Functions{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(unsigned) - {\b photoCountForPhotoView:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSImage *) - {\b photoView:photoAtIndex:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSIndexSet *) - {\b selectionIndexesForPhotoView:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSIndexSet *) - {\b photoView:willSetSelectionIndexes:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b photoView:didSetSelectionIndexes:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(unsigned int) - {\b photoView:draggingSourceOperationMaskForLocal:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSArray *) - {\b pasteboardDragTypesForPhotoView:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(NSData *) - {\b photoView:pasteboardDataForPhotoAtIndex:dataType:}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+(void) - {\b photoView:doubleClickOnPhotoAtIndex:}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Detailed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Description{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+defines{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+may{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+can{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drop{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+double-click{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+even{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+display{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}\par
+\par
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+MUPhotoViewDelegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provides{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implementations{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+methods{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocLinkedWord)}
+{\b MUPhotoView}{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+may{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Overriding{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+them{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+optional{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+default{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implementations{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+no{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+results{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+results{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+zero{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+as{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appropriate{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+Member{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Function{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+Documentation{\comment RTFDocVisitor::visitPost(DocText)}
+\par
+\pard\plain 
+{\xe \v pasteboardDragTypesForPhotoView:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:pasteboardDragTypesForPhotoView:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSArray *) pasteboardDragTypesForPhotoView: ({\b MUPhotoView} *) {\i view}}
+}\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+time{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pass{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicating{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+types{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+put{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+on{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+pasteboard{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+given{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+set{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+images{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implementation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-photoView{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWord)}
+draggingSourceOperationMaskForLocal{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+anything{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+other{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+than{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NO{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+also{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implement{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indicate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+which{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+types{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoCountForPhotoView:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoCountForPhotoView:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (unsigned) photoCountForPhotoView: ({\b MUPhotoView} *) {\i view}}
+}\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+true{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocSymbol)}
+@{\comment RTFDocVisitor::visit(DocWord)}
+"photosArray"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+b{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotosArray{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+non-nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+c{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:didSetSelectionIndexes:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:didSetSelectionIndexes:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) photoView: ({\b MUPhotoView} *) {\i view}(NSIndexSet *) {\i indexes}}
+}\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+true{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocSymbol)}
+@{\comment RTFDocVisitor::visit(DocWord)}
+"photoSelectionIndexes"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+b{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotoSelectionIndexes{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+non-nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSEt{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+c{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+do{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whatever{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+work{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+necessary{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+mark{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+specified{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indexes{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+as{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selected{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+i.e{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+subsequent{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-selectionIndexesForPhotoView{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+most{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+likely{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+set{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+identical{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+one{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:doubleClickOnPhotoAtIndex:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:doubleClickOnPhotoAtIndex:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (void) photoView: ({\b MUPhotoView} *) {\i view}(unsigned) {\i index}}
+}\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+when{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+user{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+double-clicks{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+on{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+specified{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+index{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+do{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+wish{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+any{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+double-click{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+behavior{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+then{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+don't{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+need{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+override{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:draggingSourceOperationMaskForLocal:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:draggingSourceOperationMaskForLocal:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (unsigned int) photoView: ({\b MUPhotoView} *) {\i view}(BOOL) {\i isLocal}}
+}\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+A{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+would{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+use{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+specify{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+support{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+operations{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+i.e{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+whether{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+allow{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+be{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+dragged{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+out{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+semantics{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+identical{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-{\comment RTFDocVisitor::visit(DocWord)}
+[{\comment RTFDocVisitor::visit(DocWord)}
+NSDraggingSource{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draggingSourceOperationmaskForLocal{\comment RTFDocVisitor::visit(DocWord)}
+]{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:pasteboardDataForPhotoAtIndex:dataType:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:pasteboardDataForPhotoAtIndex:dataType:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSData *) photoView: ({\b MUPhotoView} *) {\i view}(unsigned) {\i index}(NSString *) {\i type}}
+}\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+when{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+about{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+initiate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drag{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+It{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+once{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+*each*{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+combination{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+type{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returned{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-pasteboardDragTypesForPhotoView{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+each{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photo{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+currently{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+being{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+dragged{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appropriate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+data{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+given{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+type{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+provide{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+any{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implementation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-photoView{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWord)}
+draggingSourceOperationMaskForLocal{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+that{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+returns{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+anything{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+other{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+than{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NO{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+also{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implement{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:photoAtIndex:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:photoAtIndex:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSImage *) photoView: ({\b MUPhotoView} *) {\i view}(unsigned) {\i index}}
+}\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+true{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+objects{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocSymbol)}
+@{\comment RTFDocVisitor::visit(DocWord)}
+"photosArray"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+b{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotosArray{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+non-nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+array{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+c{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSImage{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appropriate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+draw{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+specified{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+index{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v photoView:willSetSelectionIndexes:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:photoView:willSetSelectionIndexes:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSIndexSet *) photoView: ({\b MUPhotoView} *) {\i view}(NSIndexSet *) {\i indexes}}
+}\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+true{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocSymbol)}
+@{\comment RTFDocVisitor::visit(DocWord)}
+"photoSelectionIndexes"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+b{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotoSelectionIndexes{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+non-nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+c{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+If{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implements{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+it{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+can{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+modify{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+proposed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appropriate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+You{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+only{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+implement{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+some{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+reason{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+you{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+want{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+manipulate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+or{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+look{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+at{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selection{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indexes{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+before{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+marks{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+them{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+as{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+selected{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{\xe \v selectionIndexesForPhotoView:\:NSObject(MUPhotoViewDelegate)}
+{\xe \v NSObject(MUPhotoViewDelegate)\:selectionIndexesForPhotoView:}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+- (NSIndexSet *) selectionIndexesForPhotoView: ({\b MUPhotoView} *) {\i view}}
+}\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\comment RTFDocVisitor::visitPre(DocRoot)}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+view{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+will{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+call{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+method{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+if{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+all{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+of{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+are{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+true{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+bound{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+to{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocSymbol)}
+@{\comment RTFDocVisitor::visit(DocWord)}
+"photoSelectionIndexes"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+key{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+b{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+-setPhotoSelectionIndexes{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+has{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+been{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+called{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+passed{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+a{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+valid{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+non-nil{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWord)}
+,{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+and{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+({\comment RTFDocVisitor::visit(DocWord)}
+c{\comment RTFDocVisitor::visit(DocWord)}
+){\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+is{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+not{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+nil{\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+delegate{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+return{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+an{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+NSIndexSet{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+filled{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+with{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+indexes{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+appropriately{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+representing{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+which{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+photos{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+should{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+be{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+drawn{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+as{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+"selected"{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+.{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visitPost(DocPara)}
+{\comment RTFDocVisitor::visitPost(DocRoot)}
+\par
+}}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+{\comment RTFDocVisitor::visitPre(DocText)}
+{\comment RTFDocVisitor::visit(DocWord)}
+The{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+documentation{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+for{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+this{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+category{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+was{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+generated{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+from{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+the{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+following{\comment RTFDocVisitor::visit(DocWhiteSpace)}
+ {\comment RTFDocVisitor::visit(DocWord)}
+file{\comment RTFDocVisitor::visit(DocWord)}
+:{\comment RTFDocVisitor::visitPost(DocText)}
+{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h\par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

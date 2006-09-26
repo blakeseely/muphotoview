@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.4.6">
+  <compound refid="interface_app_controller" kind="class"><name>AppController</name>
+    <member refid="interface_app_controller_1e6200e76c5dec299e9aeecd873ecf6c2" kind="variable"><name>photosArray</name></member>
+    <member refid="interface_app_controller_168d55713f559b6349443bd20ef027c67" kind="variable"><name>selectionIndexes</name></member>
+    <member refid="interface_app_controller_12c43205d8992d9face1a4753c2705690" kind="variable"><name>photosArrayController</name></member>
+    <member refid="interface_app_controller_13375037cb47b3d1ce5e78942100155cb" kind="variable"><name>photoView</name></member>
+    <member refid="interface_app_controller_116d0dff1165d096f0a2f1fd82955ea2d" kind="variable"><name>photoSizeSlider</name></member>
+    <member refid="interface_app_controller_12d7c824059484c13448c856893b5a859" kind="variable"><name>backgroundColorWell</name></member>
+    <member refid="interface_app_controller_1f3ae33c12f875649fb2f53bfd9dd9a63" kind="variable"><name>outlineBorder</name></member>
+    <member refid="interface_app_controller_17d46839e0446dc1df1e34937a8d12616" kind="variable"><name>shadowBorder</name></member>
+    <member refid="interface_app_controller_1fc15bfd595d4c48fa92b420c79658470" kind="variable"><name>outlineSelection</name></member>
+    <member refid="interface_app_controller_1799614bace88f83933dd81cf503469fe" kind="variable"><name>outlineSelectionColor</name></member>
+    <member refid="interface_app_controller_1162ca2f89d4df5deb13bf20492c64508" kind="variable"><name>shadowSelection</name></member>
+  </compound>
+  <compound refid="interface_m_u_photo_view" kind="class"><name>MUPhotoView</name>
+    <member refid="interface_m_u_photo_view_142ea6448497fc60d50b59bad44f9f4f3" kind="function"><name>delegate</name></member>
+    <member refid="interface_m_u_photo_view_1d4f5e3701dcc2cd0430036e6a62112c8" kind="function"><name>setDelegate:</name></member>
+    <member refid="interface_m_u_photo_view_1a78c8f83b51947a6b55a034e9b2fd3fe" kind="function"><name>photosArray</name></member>
+    <member refid="interface_m_u_photo_view_10f84566d69ca6b60ab49920abb5f9262" kind="function"><name>setPhotosArray:</name></member>
+    <member refid="interface_m_u_photo_view_127ec4fc46193b4d1cbfe2f5df4103534" kind="function"><name>selectedPhotoIndexes</name></member>
+    <member refid="interface_m_u_photo_view_1b7bedf237f9e9128af3b015b2042ad7a" kind="function"><name>setSelectedPhotoIndexes:</name></member>
+    <member refid="interface_m_u_photo_view_1713e0c5b20ed70e405614b8b8702b26b" kind="function"><name>useBorderSelection</name></member>
+    <member refid="interface_m_u_photo_view_16021c0bdb146665f5096e944a80ee908" kind="function"><name>setUseBorderSelection:</name></member>
+    <member refid="interface_m_u_photo_view_179dc5ca057a4e0743951c4b30249acd5" kind="function"><name>selectionBorderColor</name></member>
+    <member refid="interface_m_u_photo_view_1be2bf039d1b75e7d9c75cc2093334a1e" kind="function"><name>setSelectionBorderColor:</name></member>
+    <member refid="interface_m_u_photo_view_1919b33544e2380270e1304042df3b1e0" kind="function"><name>useShadowSelection</name></member>
+    <member refid="interface_m_u_photo_view_1336789ce4ddaeb4078ad829f274cfff5" kind="function"><name>setUseShadowSelection:</name></member>
+    <member refid="interface_m_u_photo_view_1330e1922d4c3045a40d6ab8df4f659fd" kind="function"><name>useShadowBorder</name></member>
+    <member refid="interface_m_u_photo_view_19547dbd8c247d3f976a14b60075e7052" kind="function"><name>setUseShadowBorder:</name></member>
+    <member refid="interface_m_u_photo_view_12c28bd9d281167b75d75824910b75107" kind="function"><name>useOutlineBorder</name></member>
+    <member refid="interface_m_u_photo_view_15e9fab8f2f9694656bcf206f320e58d4" kind="function"><name>setUseOutlineBorder:</name></member>
+    <member refid="interface_m_u_photo_view_174c76236d682feceb6feb79225512959" kind="function"><name>backgroundColor</name></member>
+    <member refid="interface_m_u_photo_view_18fdc07962b9b4940574851faef31acf4" kind="function"><name>setBackgroundColor:</name></member>
+    <member refid="interface_m_u_photo_view_1c954b3f084c1abc56dda047a9a350b7d" kind="function"><name>photoSize</name></member>
+    <member refid="interface_m_u_photo_view_18c44b496107042511a4369253722dae9" kind="function"><name>setPhotoSize:</name></member>
+    <member refid="interface_m_u_photo_view_1af973389f0227f2fcdc9521944fee50f" kind="function"><name>photoVerticalSpacing</name></member>
+    <member refid="interface_m_u_photo_view_1e0829db86c5b88e2f689bb8e654cfe0f" kind="function"><name>setPhotoVerticalSpacing:</name></member>
+    <member refid="interface_m_u_photo_view_1ddd75d8141a21c86d3fd4f7c1ba9e90d" kind="function"><name>photoHorizontalSpacing</name></member>
+    <member refid="interface_m_u_photo_view_198d1399019cb4ea43e2e13c24e16fba0" kind="function"><name>setPhotoHorizontalSpacing:</name></member>
+    <member refid="interface_m_u_photo_view_19fd96a8dec2aec5d42901fad630470f2" kind="function"><name>borderOutlineColor</name></member>
+    <member refid="interface_m_u_photo_view_17e80094f20a6fd3cc23f4ae313761b3e" kind="function"><name>setBorderOutlineColor:</name></member>
+    <member refid="interface_m_u_photo_view_1e4db0f47a0dea53bf37b3cbf06d674ba" kind="function"><name>shadowBoxColor</name></member>
+    <member refid="interface_m_u_photo_view_1ae64d80955b156d3858913fa4f7e64c7" kind="function"><name>setShadowBoxColor:</name></member>
+    <member refid="interface_m_u_photo_view_1812d9cac577383425c067e3f47f3d729" kind="function"><name>selectionBorderWidth</name></member>
+    <member refid="interface_m_u_photo_view_194805f391f5dc8ce1292e1d60c806198" kind="function"><name>setSelectionBorderWidth:</name></member>
+    <member refid="interface_m_u_photo_view_18be58626d0985db888976cff4ce9a46c" kind="variable"><name>delegate</name></member>
+    <member refid="interface_m_u_photo_view_13b6e90817e7781d4888f029020802274" kind="variable"><name>sendsLiveSelectionUpdates</name></member>
+    <member refid="interface_m_u_photo_view_18d6bfcfeac47486d566bb9e00836d26d" kind="variable"><name>useHighQualityResize</name></member>
+    <member refid="interface_m_u_photo_view_1af537f10b94ae728be9a0b40383d7d5d" kind="variable"><name>photosArray</name></member>
+    <member refid="interface_m_u_photo_view_158b488be868c10a671f72ca6b24cb52a" kind="variable"><name>selectedPhotoIndexes</name></member>
+    <member refid="interface_m_u_photo_view_1369997dc992e3ad619979d080f842347" kind="variable"><name>dragSelectedPhotoIndexes</name></member>
+    <member refid="interface_m_u_photo_view_174659f97938ff9b8ac388c87446d6741" kind="variable"><name>backgroundColor</name></member>
+    <member refid="interface_m_u_photo_view_19a3a003a3d0d8f3988dbdca79ad1ff04" kind="variable"><name>useShadowBorder</name></member>
+    <member refid="interface_m_u_photo_view_1ea90b910a97101c554345ae8ed935fd9" kind="variable"><name>useOutlineBorder</name></member>
+    <member refid="interface_m_u_photo_view_156e331ee57ea8709a2262594d09715a2" kind="variable"><name>borderShadow</name></member>
+    <member refid="interface_m_u_photo_view_150c6ad500894deb8c6de39f5b07141da" kind="variable"><name>noShadow</name></member>
+    <member refid="interface_m_u_photo_view_105dde1ff4cb9f2ebf862ba51419f7cd9" kind="variable"><name>borderOutlineColor</name></member>
+    <member refid="interface_m_u_photo_view_1ad3b4ef9717616e70eab6eac7dca6b53" kind="variable"><name>useBorderSelection</name></member>
+    <member refid="interface_m_u_photo_view_1b8bd4c590574292b22d6296ea0d65c70" kind="variable"><name>useShadowSelection</name></member>
+    <member refid="interface_m_u_photo_view_150043c2ac976454f2bacebb5a9dd1b88" kind="variable"><name>selectionBorderColor</name></member>
+    <member refid="interface_m_u_photo_view_15f7154d6dcbf0539ac296127da2f5a45" kind="variable"><name>shadowBoxColor</name></member>
+    <member refid="interface_m_u_photo_view_11382b40196ad2b298020d1f089508ea1" kind="variable"><name>selectionBorderWidth</name></member>
+    <member refid="interface_m_u_photo_view_1d115f70b574a42f9e775b14d9b936e26" kind="variable"><name>photoSize</name></member>
+    <member refid="interface_m_u_photo_view_116b4e7cb8dd099c53d18d396f4807ffa" kind="variable"><name>photoVerticalSpacing</name></member>
+    <member refid="interface_m_u_photo_view_109f06db450e3d548f6c3f805439022dd" kind="variable"><name>photoHorizontalSpacing</name></member>
+    <member refid="interface_m_u_photo_view_1ac7677684dc7cbabd6b483dd3fd64135" kind="variable"><name>gridSize</name></member>
+    <member refid="interface_m_u_photo_view_1ce6b85f347989246d12f8e57b94f0e71" kind="variable"><name>columns</name></member>
+    <member refid="interface_m_u_photo_view_1f6a1c58dab65a551ec0b6044a2235dc3" kind="variable"><name>rows</name></member>
+    <member refid="interface_m_u_photo_view_175c85bd3c661f04bff6cb512865604e0" kind="variable"><name>mouseDown</name></member>
+    <member refid="interface_m_u_photo_view_1a417391d0cb71d0b44cc1c8773d54f8f" kind="variable"><name>potentialDragDrop</name></member>
+    <member refid="interface_m_u_photo_view_174ecf1519fde9d979d1c45d32050067f" kind="variable"><name>mouseDownPoint</name></member>
+    <member refid="interface_m_u_photo_view_1a5ce1a67707666719e15759709c2d0d8" kind="variable"><name>mouseCurrentPoint</name></member>
+    <member refid="interface_m_u_photo_view_18aaaa557359a3d540e15463748cc5f51" kind="variable"><name>autoscrollTimer</name></member>
+  </compound>
+  <compound refid="category_m_u_photo_view(_private_a_p_i)" kind="category"><name>MUPhotoView(PrivateAPI)</name>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1388c653517c2cb50c9b7db51cd1b0786" kind="function"><name>updateGridAndFrame</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1ba13a4abb3ef0b3136b0cbbb795549c7" kind="function"><name>photoCount</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1c03ef6e39fbe8fc232e873919cb7b6ae" kind="function"><name>photoAtIndex:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1216badab687f8e498c40a2690276297b" kind="function"><name>scaledPhotoSizeForSize:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_189d2184cf8ebd06d67d04f375a6158b0" kind="function"><name>scalePhoto:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_15fa898186d606870e4ae098c32be7479" kind="function"><name>photoIndexForPoint:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_11081369330802f67d1c97c2517402b4d" kind="function"><name>photoIndexRangeForRect:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1518f83aaec26978737e26ebe3e7c587f" kind="function"><name>gridRectForIndex:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_179aa2698f3b556b6389b49da6059f3b7" kind="function"><name>rectCenteredInRect:withSize:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1369a81f8ba346efa433c54b9d6ad0c01" kind="function"><name>photoRectForIndex:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1307ecf24c02a39d0ddf2fe22e80bea2d" kind="function"><name>isPhotoSelectedAtIndex:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_1c4a4c11602c52617becf7feaf9382729" kind="function"><name>selectionIndexes</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_16ee1e9c8db46ca53e9b0080b1733d77d" kind="function"><name>setSelectionIndexes:</name></member>
+    <member refid="category_m_u_photo_view(_private_a_p_i)_108609f7bdb81eb24104057ca5a6ebdb9" kind="function"><name>shadowBoxPathForRect:</name></member>
+  </compound>
+  <compound refid="class_n_s_object" kind="class"><name>NSObject</name>
+  </compound>
+  <compound refid="category_n_s_object(_m_u_photo_view_delegate)" kind="category"><name>NSObject(MUPhotoViewDelegate)</name>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_15012fd973adbcb5165b0a830b46100f0" kind="function"><name>photoCountForPhotoView:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_1f29adaf349861b6ab7c2b427114ab73d" kind="function"><name>photoView:photoAtIndex:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_1aba153f99799dc20969fd3538cbc92ea" kind="function"><name>selectionIndexesForPhotoView:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_1cc75f4ee5d3ecd0c2c37c0b26f6bf08c" kind="function"><name>photoView:willSetSelectionIndexes:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_1dc1847e0791f5e39310c5ca7b2caaef5" kind="function"><name>photoView:didSetSelectionIndexes:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_142f4131dee120657b393067d35c7c771" kind="function"><name>photoView:draggingSourceOperationMaskForLocal:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_13c401ecbd6bc8839e0886e4c672fbce6" kind="function"><name>pasteboardDragTypesForPhotoView:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_16087d843615018dd2c384958fc5efd09" kind="function"><name>photoView:pasteboardDataForPhotoAtIndex:dataType:</name></member>
+    <member refid="category_n_s_object(_m_u_photo_view_delegate)_1b1d5136ccafab5ba223ab0f7ac70842f" kind="function"><name>photoView:doubleClickOnPhotoAtIndex:</name></member>
+  </compound>
+  <compound refid="_app_controller_8h" kind="file"><name>AppController.h</name>
+  </compound>
+  <compound refid="_app_controller_8m" kind="file"><name>AppController.m</name>
+  </compound>
+  <compound refid="main_8m" kind="file"><name>main.m</name>
+    <member refid="main_8m_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_m_u_photo_view_8h" kind="file"><name>MUPhotoView.h</name>
+  </compound>
+  <compound refid="_m_u_photo_view_8m" kind="file"><name>MUPhotoView.m</name>
+  </compound>
+  <compound refid="dir_e11822e231dce5e71b1af1e9a358e2cd" kind="dir"><name>/Users/blakeseely/</name>
+  </compound>
+  <compound refid="dir_87904fe112088f1a24577c4facffe724" kind="dir"><name>/Users/blakeseely/Desktop/</name>
+  </compound>
+  <compound refid="dir_71198a9db6eaa819e9935aed51da9fbb" kind="dir"><name>/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/</name>
+  </compound>
+  <compound refid="dir_9cd90d641cef5fbc9ed835b2ebff786e" kind="dir"><name>/Users/blakeseely/Desktop/Unversioned/</name>
+  </compound>
+  <compound refid="dir_9e51036813d6151dfecc72d5fa7c02b3" kind="dir"><name>/Users/</name>
+  </compound>
+</doxygenindex>

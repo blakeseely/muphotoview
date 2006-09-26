@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="dir_71198a9db6eaa819e9935aed51da9fbb" kind="dir">
+    <compoundname>/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/</compoundname>
+    <innerfile refid="_app_controller_8h">AppController.h</innerfile>
+    <innerfile refid="_app_controller_8m">AppController.m</innerfile>
+    <innerfile refid="main_8m">main.m</innerfile>
+    <innerfile refid="_m_u_photo_view_8h">MUPhotoView.h</innerfile>
+    <innerfile refid="_m_u_photo_view_8m">MUPhotoView.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="interface_app_controller" kind="class" prot="public">
+    <compoundname>AppController</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_app_controller_1e6200e76c5dec299e9aeecd873ecf6c2" prot="protected" static="no" mutable="no">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* AppController::photosArray</definition>
+        <argsstring></argsstring>
+        <name>photosArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="13" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_168d55713f559b6349443bd20ef027c67" prot="protected" static="no" mutable="no">
+        <type>NSMutableIndexSet *</type>
+        <definition>NSMutableIndexSet* AppController::selectionIndexes</definition>
+        <argsstring></argsstring>
+        <name>selectionIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="14" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_12c43205d8992d9face1a4753c2705690" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSArrayController *</type>
+        <definition>IBOutlet NSArrayController* AppController::photosArrayController</definition>
+        <argsstring></argsstring>
+        <name>photosArrayController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="16" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_13375037cb47b3d1ce5e78942100155cb" prot="protected" static="no" mutable="no">
+        <type>IBOutlet <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+        <definition>IBOutlet MUPhotoView* AppController::photoView</definition>
+        <argsstring></argsstring>
+        <name>photoView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="18" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_116d0dff1165d096f0a2f1fd82955ea2d" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSSlider *</type>
+        <definition>IBOutlet NSSlider* AppController::photoSizeSlider</definition>
+        <argsstring></argsstring>
+        <name>photoSizeSlider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="19" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_12d7c824059484c13448c856893b5a859" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSColorWell *</type>
+        <definition>IBOutlet NSColorWell* AppController::backgroundColorWell</definition>
+        <argsstring></argsstring>
+        <name>backgroundColorWell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="20" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_1f3ae33c12f875649fb2f53bfd9dd9a63" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSButton *</type>
+        <definition>IBOutlet NSButton* AppController::outlineBorder</definition>
+        <argsstring></argsstring>
+        <name>outlineBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="22" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_17d46839e0446dc1df1e34937a8d12616" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSButton *</type>
+        <definition>IBOutlet NSButton* AppController::shadowBorder</definition>
+        <argsstring></argsstring>
+        <name>shadowBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="23" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_1fc15bfd595d4c48fa92b420c79658470" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSButton *</type>
+        <definition>IBOutlet NSButton* AppController::outlineSelection</definition>
+        <argsstring></argsstring>
+        <name>outlineSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="25" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_1799614bace88f83933dd81cf503469fe" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSColorWell *</type>
+        <definition>IBOutlet NSColorWell* AppController::outlineSelectionColor</definition>
+        <argsstring></argsstring>
+        <name>outlineSelectionColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="26" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_app_controller_1162ca2f89d4df5deb13bf20492c64508" prot="protected" static="no" mutable="no">
+        <type>IBOutlet NSButton *</type>
+        <definition>IBOutlet NSButton* AppController::shadowSelection</definition>
+        <argsstring></argsstring>
+        <name>shadowSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="27" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MUPhotoView</label>
+        <link refid="interface_m_u_photo_view"/>
+      </node>
+      <node id="1">
+        <label>AppController</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>photoView</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" line="12" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/AppController.h" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_app_controller_12d7c824059484c13448c856893b5a859" prot="protected" virt="non-virtual"><scope>AppController</scope><name>backgroundColorWell</name></member>
+      <member refid="interface_app_controller_1f3ae33c12f875649fb2f53bfd9dd9a63" prot="protected" virt="non-virtual"><scope>AppController</scope><name>outlineBorder</name></member>
+      <member refid="interface_app_controller_1fc15bfd595d4c48fa92b420c79658470" prot="protected" virt="non-virtual"><scope>AppController</scope><name>outlineSelection</name></member>
+      <member refid="interface_app_controller_1799614bace88f83933dd81cf503469fe" prot="protected" virt="non-virtual"><scope>AppController</scope><name>outlineSelectionColor</name></member>
+      <member refid="interface_app_controller_1e6200e76c5dec299e9aeecd873ecf6c2" prot="protected" virt="non-virtual"><scope>AppController</scope><name>photosArray</name></member>
+      <member refid="interface_app_controller_12c43205d8992d9face1a4753c2705690" prot="protected" virt="non-virtual"><scope>AppController</scope><name>photosArrayController</name></member>
+      <member refid="interface_app_controller_116d0dff1165d096f0a2f1fd82955ea2d" prot="protected" virt="non-virtual"><scope>AppController</scope><name>photoSizeSlider</name></member>
+      <member refid="interface_app_controller_13375037cb47b3d1ce5e78942100155cb" prot="protected" virt="non-virtual"><scope>AppController</scope><name>photoView</name></member>
+      <member refid="interface_app_controller_168d55713f559b6349443bd20ef027c67" prot="protected" virt="non-virtual"><scope>AppController</scope><name>selectionIndexes</name></member>
+      <member refid="interface_app_controller_17d46839e0446dc1df1e34937a8d12616" prot="protected" virt="non-virtual"><scope>AppController</scope><name>shadowBorder</name></member>
+      <member refid="interface_app_controller_1162ca2f89d4df5deb13bf20492c64508" prot="protected" virt="non-virtual"><scope>AppController</scope><name>shadowSelection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

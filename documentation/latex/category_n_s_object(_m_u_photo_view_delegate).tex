@@ -1,0 +1,88 @@
+\section{NSObject(MUPhoto\-View\-Delegate) Category Reference}
+\label{category_n_s_object(_m_u_photo_view_delegate)}\index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhotoViewDelegate)}}
+The MUPhoto\-View\-Delegate category defines the methods that a {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} may call, and that you can use provide drag and drop, double-click, selection and even photo display support.  
+
+
+{\tt \#import $<$MUPhoto\-View.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(unsigned) - {\bf photo\-Count\-For\-Photo\-View:}
+\item 
+(NSImage $\ast$) - {\bf photo\-View:photo\-At\-Index:}
+\item 
+(NSIndex\-Set $\ast$) - {\bf selection\-Indexes\-For\-Photo\-View:}
+\item 
+(NSIndex\-Set $\ast$) - {\bf photo\-View:will\-Set\-Selection\-Indexes:}
+\item 
+(void) - {\bf photo\-View:did\-Set\-Selection\-Indexes:}
+\item 
+(unsigned int) - {\bf photo\-View:dragging\-Source\-Operation\-Mask\-For\-Local:}
+\item 
+(NSArray $\ast$) - {\bf pasteboard\-Drag\-Types\-For\-Photo\-View:}
+\item 
+(NSData $\ast$) - {\bf photo\-View:pasteboard\-Data\-For\-Photo\-At\-Index:data\-Type:}
+\item 
+(void) - {\bf photo\-View:double\-Click\-On\-Photo\-At\-Index:}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The MUPhoto\-View\-Delegate category defines the methods that a {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} may call, and that you can use provide drag and drop, double-click, selection and even photo display support. 
+
+The MUPhoto\-View\-Delegate category provides default implementations of all the methods the {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} may call. Overriding each of them is optional - the default implementations return no results, nil results, or zero as appropriate. 
+
+
+
+\subsection{Member Function Documentation}
+\index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!pasteboardDragTypesForPhotoView:@{pasteboardDragTypesForPhotoView:}}
+\index{pasteboardDragTypesForPhotoView:@{pasteboardDragTypesForPhotoView:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) pasteboard\-Drag\-Types\-For\-Photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}}\label{category_n_s_object(_m_u_photo_view_delegate)_3c401ecbd6bc8839e0886e4c672fbce6}
+
+
+The view will call this method at drag time. The delegate should pass an array indicating the types that it will put on the pasteboard for a given set of images. If you provide an implementation for -photo\-View:dragging\-Source\-Operation\-Mask\-For\-Local: that returns anything other than NO, you should also implement this method and indicate which types you will support. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoCountForPhotoView:@{photoCountForPhotoView:}}
+\index{photoCountForPhotoView:@{photoCountForPhotoView:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (unsigned) photo\-Count\-For\-Photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}}\label{category_n_s_object(_m_u_photo_view_delegate)_5012fd973adbcb5165b0a830b46100f0}
+
+
+The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @\char`\"{}photos\-Array\char`\"{} key, (b) -set\-Photos\-Array: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:didSetSelectionIndexes:@{photoView:didSetSelectionIndexes:}}
+\index{photoView:didSetSelectionIndexes:@{photoView:didSetSelectionIndexes:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(NSIndex\-Set $\ast$) {\em indexes}}\label{category_n_s_object(_m_u_photo_view_delegate)_dc1847e0791f5e39310c5ca7b2caaef5}
+
+
+The view will call this method if all of the following are true: (a) a valid NSIndex\-Set has not been bound to the @\char`\"{}photo\-Selection\-Indexes\char`\"{} key, (b) -set\-Photo\-Selection\-Indexes: has not been called and passed a valid, non-nil NSIndex\-SEt, and (c) the delegate is not nil. The delegate should do whatever work necessary to mark the specified indexes as selected. (i.e. a subsequent call to -selection\-Indexes\-For\-Photo\-View: should most likely return this set or an identical one. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:doubleClickOnPhotoAtIndex:@{photoView:doubleClickOnPhotoAtIndex:}}
+\index{photoView:doubleClickOnPhotoAtIndex:@{photoView:doubleClickOnPhotoAtIndex:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(unsigned) {\em index}}\label{category_n_s_object(_m_u_photo_view_delegate)_b1d5136ccafab5ba223ab0f7ac70842f}
+
+
+The view will call this delegate method when the user double-clicks on the photo at the specified index. If you do not wish to support any double-click behavior, then you don't need to override this method. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:draggingSourceOperationMaskForLocal:@{photoView:draggingSourceOperationMaskForLocal:}}
+\index{photoView:draggingSourceOperationMaskForLocal:@{photoView:draggingSourceOperationMaskForLocal:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (unsigned int) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(BOOL) {\em is\-Local}}\label{category_n_s_object(_m_u_photo_view_delegate)_42f4131dee120657b393067d35c7c771}
+
+
+A delegate would use this method to specify whether the view should support drag operations. (i.e. whether the view should allow photos to be dragged out of the view. The semantics are identical to the -[NSDragging\-Source dragging\-Source\-Operationmask\-For\-Local] \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:pasteboardDataForPhotoAtIndex:dataType:@{photoView:pasteboardDataForPhotoAtIndex:dataType:}}
+\index{photoView:pasteboardDataForPhotoAtIndex:dataType:@{photoView:pasteboardDataForPhotoAtIndex:dataType:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSData $\ast$) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(unsigned) {\em index}(NSString $\ast$) {\em type}}\label{category_n_s_object(_m_u_photo_view_delegate)_6087d843615018dd2c384958fc5efd09}
+
+
+The view will call this method when it is about to initiate a drag. It will call this method once for $\ast$each$\ast$ combination type returned from -pasteboard\-Drag\-Types\-For\-Photo\-View: and each photo currently being dragged. The delegate should return the appropriate data for the given type. If you provide any implementation of -photo\-View:dragging\-Source\-Operation\-Mask\-For\-Local that returns anything other than NO, you should also implement this method. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:photoAtIndex:@{photoView:photoAtIndex:}}
+\index{photoView:photoAtIndex:@{photoView:photoAtIndex:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSImage $\ast$) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(unsigned) {\em index}}\label{category_n_s_object(_m_u_photo_view_delegate)_f29adaf349861b6ab7c2b427114ab73d}
+
+
+The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @\char`\"{}photos\-Array\char`\"{} key, (b) -set\-Photos\-Array: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. The delegate should return the NSImage appropriate to draw at the specified index. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!photoView:willSetSelectionIndexes:@{photoView:willSetSelectionIndexes:}}
+\index{photoView:willSetSelectionIndexes:@{photoView:willSetSelectionIndexes:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSIndex\-Set $\ast$) photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}(NSIndex\-Set $\ast$) {\em indexes}}\label{category_n_s_object(_m_u_photo_view_delegate)_cc75f4ee5d3ecd0c2c37c0b26f6bf08c}
+
+
+The view will call this method if all of the following are true: (a) a valid NSIndex\-Set has not been bound to the @\char`\"{}photo\-Selection\-Indexes\char`\"{} key, (b) -set\-Photo\-Selection\-Indexes: has not been called and passed a valid, non-nil NSIndex\-Set, and (c) the delegate is not nil. If the delegate implements this method, it can modify the proposed selection and return an appropriate NSIndex\-Set. You should only implement this method if, for some reason, you want to manipulate or look at the selection indexes before the view marks them as selected. \index{NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}!selectionIndexesForPhotoView:@{selectionIndexesForPhotoView:}}
+\index{selectionIndexesForPhotoView:@{selectionIndexesForPhotoView:}!NSObject(MUPhotoViewDelegate)@{NSObject(MUPhoto\-View\-Delegate)}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSIndex\-Set $\ast$) selection\-Indexes\-For\-Photo\-View: ({\bf MUPhoto\-View} $\ast$) {\em view}}\label{category_n_s_object(_m_u_photo_view_delegate)_aba153f99799dc20969fd3538cbc92ea}
+
+
+The view will call this method if all of the following are true: (a) a valid NSIndex\-Set has not been bound to the @\char`\"{}photo\-Selection\-Indexes\char`\"{} key, (b) -set\-Photo\-Selection\-Indexes: has not been called and passed a valid, non-nil NSIndex\-Set, and (c) the delegate is not nil. The delegate should return an NSIndex\-Set filled with indexes appropriately representing which photos should be drawn as \char`\"{}selected\char`\"{} . 
+
+The documentation for this category was generated from the following file:\begin{CompactItemize}
+\item 
+/Users/blakeseely/Desktop/Unversioned/MUPhoto\-View Demo/MUPhoto\-View.h\end{CompactItemize}

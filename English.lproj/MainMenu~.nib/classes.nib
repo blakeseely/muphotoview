@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                backgroundColorWell = NSColorWell; 
+                outlineBorder = NSButton; 
+                outlineSelection = NSButton; 
+                outlineSelectionColor = NSColorWell; 
+                photoSizeSlider = NSSlider; 
+                photoView = MUPhotoView; 
+                photosArrayController = NSArrayController; 
+                shadowBorder = NSButton; 
+                shadowSelection = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MUPhotoView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

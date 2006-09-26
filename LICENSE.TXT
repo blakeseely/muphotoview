@@ -1,0 +1,7 @@
+This code included in the MUPhotoView download is licensed by the Creative Commons Attribution-ShareAlike 2.5 license. You can see the details of this license at:
+	http://creativecommons.org/licenses/by-sa/2.5/
+	
+The documents at the above URL contain full details, but the basics are:
+
+You can use this code, as long as you include a link to http://www.blakeseely.com in your final product.
+You can modify this code as long as you maintain this license for your changes.

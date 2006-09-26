@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6">
+  <compounddef id="category_n_s_object(_m_u_photo_view_delegate)" kind="category" prot="public">
+    <compoundname>NSObject(MUPhotoViewDelegate)</compoundname>
+    <includes local="no">MUPhotoView.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_15012fd973adbcb5165b0a830b46100f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned NSObject(MUPhotoViewDelegate)::photoCountForPhotoView:</definition>
+        <argsstring>(MUPhotoView *view)</argsstring>
+        <name>photoCountForPhotoView:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @&quot;photosArray&quot; key, (b) -setPhotosArray: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_1f29adaf349861b6ab7c2b427114ab73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSImage *</type>
+        <definition>NSImage * NSObject(MUPhotoViewDelegate)::photoView:photoAtIndex:</definition>
+        <argsstring>(MUPhotoView *view,[photoAtIndex] unsigned index)</argsstring>
+        <name>photoView:photoAtIndex:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[photoAtIndex]</attributes>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method if all of the following are true: (a) a valid array of NSImage objects has not been bound to the @&quot;photosArray&quot; key, (b) -setPhotosArray: has not been called and passed a valid, non-nil array, and (c) the delegate is not nil. The delegate should return the NSImage appropriate to draw at the specified index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_1aba153f99799dc20969fd3538cbc92ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSObject(MUPhotoViewDelegate)::selectionIndexesForPhotoView:</definition>
+        <argsstring>(MUPhotoView *view)</argsstring>
+        <name>selectionIndexesForPhotoView:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @&quot;photoSelectionIndexes&quot; key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSet, and (c) the delegate is not nil. The delegate should return an NSIndexSet filled with indexes appropriately representing which photos should be drawn as &quot;selected&quot; . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="166"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_1cc75f4ee5d3ecd0c2c37c0b26f6bf08c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSIndexSet *</type>
+        <definition>NSIndexSet * NSObject(MUPhotoViewDelegate)::photoView:willSetSelectionIndexes:</definition>
+        <argsstring>(MUPhotoView *view,[willSetSelectionIndexes] NSIndexSet *indexes)</argsstring>
+        <name>photoView:willSetSelectionIndexes:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[willSetSelectionIndexes]</attributes>
+          <type>NSIndexSet *</type>
+          <declname>indexes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @&quot;photoSelectionIndexes&quot; key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSet, and (c) the delegate is not nil. If the delegate implements this method, it can modify the proposed selection and return an appropriate NSIndexSet. You should only implement this method if, for some reason, you want to manipulate or look at the selection indexes before the view marks them as selected. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_1dc1847e0791f5e39310c5ca7b2caaef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSObject(MUPhotoViewDelegate)::photoView:didSetSelectionIndexes:</definition>
+        <argsstring>(MUPhotoView *view,[didSetSelectionIndexes] NSIndexSet *indexes)</argsstring>
+        <name>photoView:didSetSelectionIndexes:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[didSetSelectionIndexes]</attributes>
+          <type>NSIndexSet *</type>
+          <declname>indexes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method if all of the following are true: (a) a valid NSIndexSet has not been bound to the @&quot;photoSelectionIndexes&quot; key, (b) -setPhotoSelectionIndexes: has not been called and passed a valid, non-nil NSIndexSEt, and (c) the delegate is not nil. The delegate should do whatever work necessary to mark the specified indexes as selected. (i.e. a subsequent call to -selectionIndexesForPhotoView: should most likely return this set or an identical one. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_142f4131dee120657b393067d35c7c771" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int NSObject(MUPhotoViewDelegate)::photoView:draggingSourceOperationMaskForLocal:</definition>
+        <argsstring>(MUPhotoView *view,[draggingSourceOperationMaskForLocal] BOOL isLocal)</argsstring>
+        <name>photoView:draggingSourceOperationMaskForLocal:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[draggingSourceOperationMaskForLocal]</attributes>
+          <type>BOOL</type>
+          <declname>isLocal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A delegate would use this method to specify whether the view should support drag operations. (i.e. whether the view should allow photos to be dragged out of the view. The semantics are identical to the -[NSDraggingSource draggingSourceOperationmaskForLocal] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_13c401ecbd6bc8839e0886e4c672fbce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * NSObject(MUPhotoViewDelegate)::pasteboardDragTypesForPhotoView:</definition>
+        <argsstring>(MUPhotoView *view)</argsstring>
+        <name>pasteboardDragTypesForPhotoView:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method at drag time. The delegate should pass an array indicating the types that it will put on the pasteboard for a given set of images. If you provide an implementation for -photoView:draggingSourceOperationMaskForLocal: that returns anything other than NO, you should also implement this method and indicate which types you will support. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_16087d843615018dd2c384958fc5efd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSData *</type>
+        <definition>NSData * NSObject(MUPhotoViewDelegate)::photoView:pasteboardDataForPhotoAtIndex:dataType:</definition>
+        <argsstring>(MUPhotoView *view,[pasteboardDataForPhotoAtIndex] unsigned index,[dataType] NSString *type)</argsstring>
+        <name>photoView:pasteboardDataForPhotoAtIndex:dataType:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[pasteboardDataForPhotoAtIndex]</attributes>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[dataType]</attributes>
+          <type>NSString *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this method when it is about to initiate a drag. It will call this method once for *each* combination type returned from -pasteboardDragTypesForPhotoView: and each photo currently being dragged. The delegate should return the appropriate data for the given type. If you provide any implementation of -photoView:draggingSourceOperationMaskForLocal that returns anything other than NO, you should also implement this method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="category_n_s_object(_m_u_photo_view_delegate)_1b1d5136ccafab5ba223ab0f7ac70842f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NSObject(MUPhotoViewDelegate)::photoView:doubleClickOnPhotoAtIndex:</definition>
+        <argsstring>(MUPhotoView *view,[doubleClickOnPhotoAtIndex] unsigned index)</argsstring>
+        <name>photoView:doubleClickOnPhotoAtIndex:</name>
+        <param>
+          <type><ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[doubleClickOnPhotoAtIndex]</attributes>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The view will call this delegate method when the user double-clicks on the photo at the specified index. If you do not wish to support any double-click behavior, then you don&apos;t need to override this method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The MUPhotoViewDelegate category defines the methods that a <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> may call, and that you can use provide drag and drop, double-click, selection and even photo display support. </para>    </briefdescription>
+    <detaileddescription>
+<para>The MUPhotoViewDelegate category provides default implementations of all the methods the <ref refid="interface_m_u_photo_view" kindref="compound">MUPhotoView</ref> may call. Overriding each of them is optional - the default implementations return no results, nil results, or zero as appropriate. </para>    </detaileddescription>
+    <location file="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" line="152" bodyfile="/Users/blakeseely/Desktop/Unversioned/MUPhotoView Demo/MUPhotoView.h" bodystart="152" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_13c401ecbd6bc8839e0886e4c672fbce6" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>pasteboardDragTypesForPhotoView:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_15012fd973adbcb5165b0a830b46100f0" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoCountForPhotoView:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1dc1847e0791f5e39310c5ca7b2caaef5" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:didSetSelectionIndexes:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1b1d5136ccafab5ba223ab0f7ac70842f" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:doubleClickOnPhotoAtIndex:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_142f4131dee120657b393067d35c7c771" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:draggingSourceOperationMaskForLocal:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_16087d843615018dd2c384958fc5efd09" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:pasteboardDataForPhotoAtIndex:dataType:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1f29adaf349861b6ab7c2b427114ab73d" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:photoAtIndex:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1cc75f4ee5d3ecd0c2c37c0b26f6bf08c" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>photoView:willSetSelectionIndexes:</name></member>
+      <member refid="category_n_s_object(_m_u_photo_view_delegate)_1aba153f99799dc20969fd3538cbc92ea" prot="public" virt="virtual"><scope>NSObject(MUPhotoViewDelegate)</scope><name>selectionIndexesForPhotoView:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

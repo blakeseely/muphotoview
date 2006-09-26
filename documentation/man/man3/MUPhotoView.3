@@ -1,0 +1,148 @@
+.TH "MUPhotoView" 3 "17 Apr 2006" "Version 1.0" "MUPhotoView" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MUPhotoView \- \fBMUPhotoView\fP displays a grid of photos similar to iPhoto's main photo view. The class gives developers several options for providing images - via bindings or delegation.  
+
+.PP
+.SH SYNOPSIS
+.br
+.PP
+\fC#import <MUPhotoView.h>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBdelegate\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetDelegate:\fP"
+.br
+.ti -1c
+.RI "(NSArray *) - \fBphotosArray\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetPhotosArray:\fP"
+.br
+.ti -1c
+.RI "(NSIndexSet *) - \fBselectedPhotoIndexes\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetSelectedPhotoIndexes:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBuseBorderSelection\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetUseBorderSelection:\fP"
+.br
+.ti -1c
+.RI "(NSColor *) - \fBselectionBorderColor\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetSelectionBorderColor:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBuseShadowSelection\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetUseShadowSelection:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBuseShadowBorder\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetUseShadowBorder:\fP"
+.br
+.ti -1c
+.RI "(BOOL) - \fBuseOutlineBorder\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetUseOutlineBorder:\fP"
+.br
+.ti -1c
+.RI "(NSColor *) - \fBbackgroundColor\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetBackgroundColor:\fP"
+.br
+.ti -1c
+.RI "(float) - \fBphotoSize\fP"
+.br
+.ti -1c
+.RI "(void) - \fBsetPhotoSize:\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBMUPhotoView\fP displays a grid of photos similar to iPhoto's main photo view. The class gives developers several options for providing images - via bindings or delegation. 
+
+\fBMUPhotoView\fP displays a resizeable grid of photos, similar to iPhoto's photo view functionality. \fBMUPhotoView\fP provides developers with two different options for passing photo information to the view Most importantly, \fBMUPhotoView\fP currently only deals with an array of photos. It does not yet know how to display titles or any other metadata. It also does not know how to find NSImage objects that are inside another object - it expects NSImage objects. The first method for providing those objects it by binding an array of NSImage objects to the 'photosArray' key of the view. If this key has been bound, \fBMUPhotoView\fP will fetch all the images it displays from that binding. The second method is to have a delegate object provide the photos. \fBMUPhotoView\fP will only call the delegate's photo methods if the photosArray key has not been bound. Please see the MUPhotoViewDelegate category documentation for descriptions of the methods. 
+.PP
+.SH "Member Function Documentation"
+.PP 
+.SS "- (NSColor *) backgroundColor "
+.PP
+Returns the current color being used to paint the background before drawing photos. The default value is [NSColor whiteColor]. 
+.SS "- (id) delegate "
+.PP
+Returns the current delegate 
+.SS "- (NSArray *) photosArray "
+.PP
+Returns the array of NSImage objects that \fBMUPhotoView\fP is currently drawing from. If nothing has been bound to the 'photosArray' key and there has not been a call to -setPhotosArray, then this will probably return nil. If this method returns nil, then at draw time, the \fBMUPhotoView\fP will attempt to ask its delegate for the count of photos and for photos at each index. 
+.SS "- (float) photoSize "
+.PP
+Returns the current pixel size that photos are scaled to. When drawing, a photo is scalled proportionately so it's longest side is this number of pixels. 
+.SS "- (NSIndexSet *) selectedPhotoIndexes "
+.PP
+Returns the current NSIndexSet indicating which photos are currently selected. If this is nil, then the view is asking its delegate for the selection index information. 
+.SS "- (NSColor *) selectionBorderColor "
+.PP
+Returns the current color that thew view is using to draw selection borders. If -useBorderSelection returns NO, it doesn't matter what color is returned from this method. The initial value for selectionBorderColor is the user's current selection color. 
+.SS "- (void) setBackgroundColor: (NSColor *) aBackgroundColor"
+.PP
+Tells the view to use a new color when drawing the background. If -useShadowSelection is YES, updating the background color may also affect the color being used to draw the shadow selection indicator. 
+.SS "- (void) setDelegate: (id) del"
+.PP
+Sets the delegate. See the MUPhotoViewDelegate category for information about which delegate methods will get called and when. 
+.SS "- (void) setPhotosArray: (NSArray *) aPhotosArray"
+.PP
+Sets the array of NSImage objects that \fBMUPhotoView\fP uses to draw itself. If you call this method and pass nil, and the delegate is NOT nil, it will ask the delegate for the photos. 
+.SS "- (void) setPhotoSize: (float) aPhotoSize"
+.PP
+Tells the view to draw photos scaled so their longest side is aPhotoSize pixels long. This will cause the visible area of the view to be redrawn - and the view will attempt to keep the currently-visible photos near the center of the scroll area. 
+.SS "- (void) setSelectedPhotoIndexes: (NSIndexSet *) aSelectedPhotoIndexes"
+.PP
+Sets the NSIndexSet that the view will use to indicate which photos need to appear selected in the view. By setting this value to nil, \fBMUPhotoView\fP will ask the delegate for this information. 
+.SS "- (void) setSelectionBorderColor: (NSColor *) aSelectionBorderColor"
+.PP
+Tells the view what color border should be drawn around a 'selected' photo. If -useBorderSelection returns NO, calling this method will not have any effect until -setUseBorderSelection:YES is callled. The selection border color defaults to the user's current selection color. 
+.SS "- (void) setUseBorderSelection: (BOOL) flag"
+.PP
+Tells the view whether or not to indicated 'selected' photos by drawing a 3px border around the photo. The appearnce is similar to iPhoto's selection style. The default value is YES. 
+.SS "- (void) setUseOutlineBorder: (BOOL) flag"
+.PP
+Tells the view whether or not to draw a 1px, 50% white border around each photo. The default value is YES. 
+.SS "- (void) setUseShadowBorder: (BOOL) flag"
+.PP
+Passing YES to this method will cause the view to draw a drop shadow around each photo. The default value is YES. 
+.SS "- (void) setUseShadowSelection: (BOOL) flag"
+.PP
+By setting this value to YES, you tell \fBMUPhotoView\fP to indicate a 'selected' photo by drawing a semi-transparent rounded rectangle around the photo. The color and opacity of the rounded rectangle depend on the current background color of the view: for lighter colors, \fBMUPhotoView\fP will use a semi-transparent black; for darker colors, the color will be a semi-transparent white. 
+.SS "- (BOOL) useBorderSelection "
+.PP
+Indicates whether the view is drawing 'selected' photos with a 3px border around the photo. The appearnce is similar to iPhoto's selection style. The default value is YES. 
+.SS "- (BOOL) useOutlineBorder "
+.PP
+Indicates whether the view is currently set to draw a 1px, 50% white border around each photo. The default value is YES. 
+.SS "- (BOOL) useShadowBorder "
+.PP
+Indicates whether the view is drawing a drop-shadow around each photo. The default value is YES. 
+.SS "- (BOOL) useShadowSelection "
+.PP
+Indicates whether the view indicates 'selected' photos by drawing a semi-transparent rounded box around the photo. The default value is NO. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MUPhotoView from the source code.

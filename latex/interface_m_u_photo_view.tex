@@ -1,0 +1,166 @@
+\section{MUPhoto\-View Class Reference}
+\label{interface_m_u_photo_view}\index{MUPhotoView@{MUPhotoView}}
+{\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} displays a grid of photos similar to i\-Photo's main photo view. The class gives developers several options for providing images - via bindings or delegation.  
+
+
+{\tt \#import $<$MUPhoto\-View.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) - {\bf delegate}
+\item 
+(void) - {\bf set\-Delegate:}
+\item 
+(NSArray $\ast$) - {\bf photos\-Array}
+\item 
+(void) - {\bf set\-Photos\-Array:}
+\item 
+(NSIndex\-Set $\ast$) - {\bf selected\-Photo\-Indexes}
+\item 
+(void) - {\bf set\-Selected\-Photo\-Indexes:}
+\item 
+(BOOL) - {\bf use\-Border\-Selection}
+\item 
+(void) - {\bf set\-Use\-Border\-Selection:}
+\item 
+(NSColor $\ast$) - {\bf selection\-Border\-Color}
+\item 
+(void) - {\bf set\-Selection\-Border\-Color:}
+\item 
+(BOOL) - {\bf use\-Shadow\-Selection}
+\item 
+(void) - {\bf set\-Use\-Shadow\-Selection:}
+\item 
+(BOOL) - {\bf use\-Shadow\-Border}
+\item 
+(void) - {\bf set\-Use\-Shadow\-Border:}
+\item 
+(BOOL) - {\bf use\-Outline\-Border}
+\item 
+(void) - {\bf set\-Use\-Outline\-Border:}
+\item 
+(NSColor $\ast$) - {\bf background\-Color}
+\item 
+(void) - {\bf set\-Background\-Color:}
+\item 
+(float) - {\bf photo\-Size}
+\item 
+(void) - {\bf set\-Photo\-Size:}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+{\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} displays a grid of photos similar to i\-Photo's main photo view. The class gives developers several options for providing images - via bindings or delegation. 
+
+{\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} displays a resizeable grid of photos, similar to i\-Photo's photo view functionality. {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} provides developers with two different options for passing photo information to the view Most importantly, {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} currently only deals with an array of photos. It does not yet know how to display titles or any other metadata. It also does not know how to find NSImage objects that are inside another object - it expects NSImage objects. The first method for providing those objects it by binding an array of NSImage objects to the \char`\"{}photos\-Array\char`\"{} key of the view. If this key has been bound, {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} will fetch all the images it displays from that binding. The second method is to have a delegate object provide the photos. {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} will only call the delegate's photo methods if the photos\-Array key has not been bound. Please see the MUPhoto\-View\-Delegate category documentation for descriptions of the methods. 
+
+
+
+\subsection{Member Function Documentation}
+\index{MUPhotoView@{MUPhoto\-View}!backgroundColor@{backgroundColor}}
+\index{backgroundColor@{backgroundColor}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSColor $\ast$) background\-Color }\label{interface_m_u_photo_view_74c76236d682feceb6feb79225512959}
+
+
+Returns the current color being used to paint the background before drawing photos. The default value is [NSColor white\-Color]. \index{MUPhotoView@{MUPhoto\-View}!delegate@{delegate}}
+\index{delegate@{delegate}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (id) delegate }\label{interface_m_u_photo_view_42ea6448497fc60d50b59bad44f9f4f3}
+
+
+Returns the current delegate \index{MUPhotoView@{MUPhoto\-View}!photosArray@{photosArray}}
+\index{photosArray@{photosArray}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) photos\-Array }\label{interface_m_u_photo_view_a78c8f83b51947a6b55a034e9b2fd3fe}
+
+
+Returns the array of NSImage objects that {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} is currently drawing from. If nothing has been bound to the \char`\"{}photos\-Array\char`\"{} key and there has not been a call to -set\-Photos\-Array, then this will probably return nil. If this method returns nil, then at draw time, the {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} will attempt to ask its delegate for the count of photos and for photos at each index. \index{MUPhotoView@{MUPhoto\-View}!photoSize@{photoSize}}
+\index{photoSize@{photoSize}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (float) photo\-Size }\label{interface_m_u_photo_view_c954b3f084c1abc56dda047a9a350b7d}
+
+
+Returns the current pixel size that photos are scaled to. When drawing, a photo is scalled proportionately so it's longest side is this number of pixels. \index{MUPhotoView@{MUPhoto\-View}!selectedPhotoIndexes@{selectedPhotoIndexes}}
+\index{selectedPhotoIndexes@{selectedPhotoIndexes}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSIndex\-Set $\ast$) selected\-Photo\-Indexes }\label{interface_m_u_photo_view_27ec4fc46193b4d1cbfe2f5df4103534}
+
+
+Returns the current NSIndex\-Set indicating which photos are currently selected. If this is nil, then the view is asking its delegate for the selection index information. \index{MUPhotoView@{MUPhoto\-View}!selectionBorderColor@{selectionBorderColor}}
+\index{selectionBorderColor@{selectionBorderColor}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (NSColor $\ast$) selection\-Border\-Color }\label{interface_m_u_photo_view_79dc5ca057a4e0743951c4b30249acd5}
+
+
+Returns the current color that thew view is using to draw selection borders. If -use\-Border\-Selection returns NO, it doesn't matter what color is returned from this method. The initial value for selection\-Border\-Color is the user's current selection color. \index{MUPhotoView@{MUPhoto\-View}!setBackgroundColor:@{setBackgroundColor:}}
+\index{setBackgroundColor:@{setBackgroundColor:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Background\-Color: (NSColor $\ast$) {\em a\-Background\-Color}}\label{interface_m_u_photo_view_8fdc07962b9b4940574851faef31acf4}
+
+
+Tells the view to use a new color when drawing the background. If -use\-Shadow\-Selection is YES, updating the background color may also affect the color being used to draw the shadow selection indicator. \index{MUPhotoView@{MUPhoto\-View}!setDelegate:@{setDelegate:}}
+\index{setDelegate:@{setDelegate:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Delegate: (id) {\em del}}\label{interface_m_u_photo_view_d4f5e3701dcc2cd0430036e6a62112c8}
+
+
+Sets the delegate. See the MUPhoto\-View\-Delegate category for information about which delegate methods will get called and when. \index{MUPhotoView@{MUPhoto\-View}!setPhotosArray:@{setPhotosArray:}}
+\index{setPhotosArray:@{setPhotosArray:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Photos\-Array: (NSArray $\ast$) {\em a\-Photos\-Array}}\label{interface_m_u_photo_view_0f84566d69ca6b60ab49920abb5f9262}
+
+
+Sets the array of NSImage objects that {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} uses to draw itself. If you call this method and pass nil, and the delegate is NOT nil, it will ask the delegate for the photos. \index{MUPhotoView@{MUPhoto\-View}!setPhotoSize:@{setPhotoSize:}}
+\index{setPhotoSize:@{setPhotoSize:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Photo\-Size: (float) {\em a\-Photo\-Size}}\label{interface_m_u_photo_view_8c44b496107042511a4369253722dae9}
+
+
+Tells the view to draw photos scaled so their longest side is a\-Photo\-Size pixels long. This will cause the visible area of the view to be redrawn - and the view will attempt to keep the currently-visible photos near the center of the scroll area. \index{MUPhotoView@{MUPhoto\-View}!setSelectedPhotoIndexes:@{setSelectedPhotoIndexes:}}
+\index{setSelectedPhotoIndexes:@{setSelectedPhotoIndexes:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Selected\-Photo\-Indexes: (NSIndex\-Set $\ast$) {\em a\-Selected\-Photo\-Indexes}}\label{interface_m_u_photo_view_b7bedf237f9e9128af3b015b2042ad7a}
+
+
+Sets the NSIndex\-Set that the view will use to indicate which photos need to appear selected in the view. By setting this value to nil, {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} will ask the delegate for this information. \index{MUPhotoView@{MUPhoto\-View}!setSelectionBorderColor:@{setSelectionBorderColor:}}
+\index{setSelectionBorderColor:@{setSelectionBorderColor:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Selection\-Border\-Color: (NSColor $\ast$) {\em a\-Selection\-Border\-Color}}\label{interface_m_u_photo_view_be2bf039d1b75e7d9c75cc2093334a1e}
+
+
+Tells the view what color border should be drawn around a \char`\"{}selected\char`\"{} photo. If -use\-Border\-Selection returns NO, calling this method will not have any effect until -set\-Use\-Border\-Selection:YES is callled. The selection border color defaults to the user's current selection color. \index{MUPhotoView@{MUPhoto\-View}!setUseBorderSelection:@{setUseBorderSelection:}}
+\index{setUseBorderSelection:@{setUseBorderSelection:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Use\-Border\-Selection: (BOOL) {\em flag}}\label{interface_m_u_photo_view_6021c0bdb146665f5096e944a80ee908}
+
+
+Tells the view whether or not to indicated \char`\"{}selected\char`\"{} photos by drawing a 3px border around the photo. The appearnce is similar to i\-Photo's selection style. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!setUseOutlineBorder:@{setUseOutlineBorder:}}
+\index{setUseOutlineBorder:@{setUseOutlineBorder:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Use\-Outline\-Border: (BOOL) {\em flag}}\label{interface_m_u_photo_view_5e9fab8f2f9694656bcf206f320e58d4}
+
+
+Tells the view whether or not to draw a 1px, 50\% white border around each photo. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!setUseShadowBorder:@{setUseShadowBorder:}}
+\index{setUseShadowBorder:@{setUseShadowBorder:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Use\-Shadow\-Border: (BOOL) {\em flag}}\label{interface_m_u_photo_view_9547dbd8c247d3f976a14b60075e7052}
+
+
+Passing YES to this method will cause the view to draw a drop shadow around each photo. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!setUseShadowSelection:@{setUseShadowSelection:}}
+\index{setUseShadowSelection:@{setUseShadowSelection:}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (void) set\-Use\-Shadow\-Selection: (BOOL) {\em flag}}\label{interface_m_u_photo_view_336789ce4ddaeb4078ad829f274cfff5}
+
+
+By setting this value to YES, you tell {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} to indicate a \char`\"{}selected\char`\"{} photo by drawing a semi-transparent rounded rectangle around the photo. The color and opacity of the rounded rectangle depend on the current background color of the view: for lighter colors, {\bf MUPhoto\-View}{\rm (p.\,\pageref{interface_m_u_photo_view})} will use a semi-transparent black; for darker colors, the color will be a semi-transparent white. \index{MUPhotoView@{MUPhoto\-View}!useBorderSelection@{useBorderSelection}}
+\index{useBorderSelection@{useBorderSelection}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (BOOL) use\-Border\-Selection }\label{interface_m_u_photo_view_713e0c5b20ed70e405614b8b8702b26b}
+
+
+Indicates whether the view is drawing \char`\"{}selected\char`\"{} photos with a 3px border around the photo. The appearnce is similar to i\-Photo's selection style. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!useOutlineBorder@{useOutlineBorder}}
+\index{useOutlineBorder@{useOutlineBorder}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (BOOL) use\-Outline\-Border }\label{interface_m_u_photo_view_2c28bd9d281167b75d75824910b75107}
+
+
+Indicates whether the view is currently set to draw a 1px, 50\% white border around each photo. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!useShadowBorder@{useShadowBorder}}
+\index{useShadowBorder@{useShadowBorder}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (BOOL) use\-Shadow\-Border }\label{interface_m_u_photo_view_330e1922d4c3045a40d6ab8df4f659fd}
+
+
+Indicates whether the view is drawing a drop-shadow around each photo. The default value is YES. \index{MUPhotoView@{MUPhoto\-View}!useShadowSelection@{useShadowSelection}}
+\index{useShadowSelection@{useShadowSelection}!MUPhotoView@{MUPhoto\-View}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}- (BOOL) use\-Shadow\-Selection }\label{interface_m_u_photo_view_919b33544e2380270e1304042df3b1e0}
+
+
+Indicates whether the view indicates \char`\"{}selected\char`\"{} photos by drawing a semi-transparent rounded box around the photo. The default value is NO. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/blakeseely/Desktop/Unversioned/MUPhoto\-View Demo/MUPhoto\-View.h\item 
+/Users/blakeseely/Desktop/Unversioned/MUPhoto\-View Demo/MUPhoto\-View.m\end{CompactItemize}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MUPhotoView Demo' target in the 'MUPhotoView Demo' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
