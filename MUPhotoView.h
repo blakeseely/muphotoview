@@ -2,16 +2,23 @@
 //
 //  MUPhotoView
 //
-//  Created by Blake Seely on 4/4/06.
-//  This code included in the MUPhotoView download is licensed by the Creative Commons Attribution-ShareAlike 2.5 license. You can see the details of this license at:
-//  http://creativecommons.org/licenses/by-sa/2.5/
-//  The documents at the above URL contain full details, but the basics are:
-//    You can use this code, as long as you include a link to http://www.blakeseely.com in your product / derivative work.
-//    You can modify this code as long as you maintain this license for your changes.//
+// Copyright (c) 2006 Blake Seely
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+// documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+// the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+// and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+//    OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//  * You include a link to http://www.blakeseely.com in your final product.
 //
 // Version History:
 //
 // Version 1.0 - April 17, 2006 - Initial Release
+// Version 1.1 - April 29, 2006 - Photo removal support, Added support for reduced-size drawing during live resize
+// Version 1.2 - September 24, 2006 - Updated selection behavior, Changed to MIT license, Fixed issue where no images would show, switchhed to MIT License
 
 #import <Cocoa/Cocoa.h>
 
@@ -254,5 +261,8 @@
 
 // photo removal
 - (void)removePhotosAtIndexes:(NSIndexSet *)indexes;
+
+// scaling
+- (NSImage *)scaleImage:(NSImage *)image toSize:(float)size;
 
 @end
