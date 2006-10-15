@@ -281,12 +281,6 @@
         {
             [photosFastArray addObject:[NSNull null]];
         }
-        NSRange visibleRange = [self photoIndexRangeForRect:[self visibleRect]];
-        for (i = visibleRange.location; i < (visibleRange.location + visibleRange.length); i++)
-        {
-            NSImage *scaledImage = [self scaleImage:[self photoAtIndex:i] toSize:100.0];
-            [photosFastArray replaceObjectAtIndex:i withObject:scaledImage];
-        }
         
         // update internal grid size, adjust height based on the new grid size
         [self scrollPoint:([self frame].origin)];
@@ -307,13 +301,14 @@
 - (void)setSelectedPhotoIndexes:(NSIndexSet *)aSelectedPhotoIndexes
 {
     //NSLog(@"in -setSelectedPhotoIndexes:, old value of selectedPhotoIndexes: %@, changed to: %@", selectedPhotoIndexes, aSelectedPhotoIndexes);
-    if (selectedPhotoIndexes != aSelectedPhotoIndexes) {
+    if ((selectedPhotoIndexes != aSelectedPhotoIndexes) && (![selectedPhotoIndexes isEqualToIndexSet:aSelectedPhotoIndexes])) {
+
+		// Set the selection and send KVO
         [selectedPhotoIndexes release];
         [self willChangeValueForKey:@"selectedPhotoIndexes"];
         selectedPhotoIndexes = [aSelectedPhotoIndexes copy];
         [self didChangeValueForKey:@"selectedPhotoIndexes"];
-        
-        [self setNeedsDisplayInRect:[self visibleRect]];
+
     }
 }
 
@@ -470,7 +465,7 @@
     isDonePhotoResizing = NO;
     photoResizeTime = [[NSDate date] retain];
     if (nil == photoResizeTimer) {
-        photoResizeTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(updatePhotoResizing) userInfo:nil repeats:YES];
+        photoResizeTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updatePhotoResizing) userInfo:nil repeats:YES];
     }
 }
 
@@ -652,7 +647,6 @@
 
 	[self setSelectionIndexes:indexes];
 	[indexes release];
-    [self setNeedsDisplayInRect:[self visibleRect]];
 }
 
 - (void)mouseDragged:(NSEvent *)event
@@ -788,9 +782,9 @@
 		unsigned yRun = [self photoIndexForPoint:NSMakePoint(minX, maxY)] - minIndex + 1;
 		unsigned selectedRows = (yRun / columns);
         
-        // clear out existing drag indexes and seed with currently selected indexes.
+        // Save the current selection (if any), then populate the drag indexes
 		// this allows us to shift band select to add to the current selection.
-        [dragSelectedPhotoIndexes removeAllIndexes];
+		[dragSelectedPhotoIndexes removeAllIndexes];
 		[dragSelectedPhotoIndexes addIndexes:[self selectionIndexes]];
         
         // add indexes in the drag rectangle
@@ -806,19 +800,20 @@
         
         // if requested, set the selection. this could cause a rapid series of KVO notifications, so if this is false, the view tracks
         // the selection internally, but doesn't pass it to the bindings or the delegates until the drag is over.
-        if (sendsLiveSelectionUpdates) {
+		// This will cause an appropriate redraw.
+        if (sendsLiveSelectionUpdates)
+		{
             [self setSelectionIndexes:dragSelectedPhotoIndexes];
         }
-        
-        
+		
         // autoscrolling
         if (autoscrollTimer == nil) {
             autoscrollTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(autoscroll) userInfo:nil repeats:YES];
         }
+
         [[self superview] autoscroll:event];
         
-        [self setNeedsDisplayInRect:[self visibleRect]];
-        
+		[self setNeedsDisplayInRect:[self visibleRect]];
     }
     
 }
@@ -839,7 +834,6 @@
         // move the drag indexes into the main selection indexes - firing off KVO messages or delegate messages
         [self setSelectionIndexes:dragSelectedPhotoIndexes];
         [dragSelectedPhotoIndexes removeAllIndexes];
-        [self setNeedsDisplayInRect:[self visibleRect]];        
 	}
 
     if (autoscrollTimer != nil) {
@@ -848,6 +842,8 @@
 	}
     
     mouseDown = NO;
+
+	[self setNeedsDisplayInRect:[self visibleRect]];
 }
 
 - (unsigned int)draggingSourceOperationMaskForLocal:(BOOL)isLocal
@@ -922,7 +918,6 @@
     if (0 < [self photoCount]) {
         NSIndexSet *allIndexes = [[NSIndexSet alloc] initWithIndexesInRange:NSMakeRange(0, [self photoCount])];
         [self setSelectionIndexes:allIndexes];
-        [self setNeedsDisplayInRect:[self visibleRect]];
         [allIndexes release];
     }
 }
@@ -958,7 +953,6 @@
 	{
 		[self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes firstIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 
 	[newIndexes release];
@@ -972,7 +966,6 @@
         [newIndexes addIndex:([newIndexes firstIndex] - 1)];
         [self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes firstIndex]]];
-        [self setNeedsDisplayInRect:[self visibleRect]];
         [newIndexes release];
 	}
 }
@@ -998,7 +991,6 @@
 	{
 		[self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes lastIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 
 	[newIndexes release];
@@ -1012,7 +1004,6 @@
         [newIndexes addIndex:([newIndexes lastIndex] + 1)];
         [self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes lastIndex]]];
-        [self setNeedsDisplayInRect:[self visibleRect]];
         [newIndexes release];
 	}
 }
@@ -1040,7 +1031,6 @@
 	{
 		[self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes lastIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 
 	[newIndexes release];
@@ -1060,7 +1050,6 @@
         [newIndexes addIndexesInRange:addRange];
         [self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes lastIndex]]];
-        [self setNeedsDisplayInRect:[self visibleRect]];
         [newIndexes release];
 	}
 }
@@ -1086,7 +1075,6 @@
 	{
 		[self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[newIndexes firstIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 
 	[newIndexes release];
@@ -1099,7 +1087,6 @@
 		[indexes addIndexesInRange:NSMakeRange(([indexes firstIndex] - columns), columns + 1)];
 		[self setSelectionIndexes:indexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[indexes firstIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}	
 	[indexes release];
 }
@@ -1125,9 +1112,7 @@
 		NSIndexSet *newIndexes = [[NSIndexSet alloc] initWithIndex:destinationIndex];
         [self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:destinationIndex]];
-		
         [newIndexes release];
-        [self setNeedsDisplayInRect:[self visibleRect]];
 	}
 }
 
@@ -1142,7 +1127,6 @@
 		[indexes addIndexesInRange:NSMakeRange(([indexes lastIndex]), (destinationIndexPlusOne - [indexes lastIndex]))];
 		[self setSelectionIndexes:indexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[indexes lastIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 	[indexes release];
 }
@@ -1156,7 +1140,6 @@
         [self setSelectionIndexes:newIndexes];
 		[self scrollRectToVisible:[self gridRectForIndex:destinationIndex]];
 		[newIndexes release];
-        [self setNeedsDisplayInRect:[self visibleRect]];
 	}
 }
 
@@ -1168,7 +1151,6 @@
 		[indexes addIndexesInRange:NSMakeRange(destinationIndex, ([indexes firstIndex] - destinationIndex))];
 		[self setSelectionIndexes:indexes];
 		[self scrollRectToVisible:[self gridRectForIndex:destinationIndex]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 	[indexes release];
 }
@@ -1178,7 +1160,6 @@
     if (0 < [self photoCount]) {
         [self setSelectionIndexes:[NSIndexSet indexSetWithIndex:0]];
         [self scrollPoint:NSZeroPoint];
-        [self setNeedsDisplayInRect:[self visibleRect]];
     }
 }
 
@@ -1189,7 +1170,6 @@
 		[indexes addIndexesInRange:NSMakeRange(0, [indexes firstIndex])];
 		[self setSelectionIndexes:indexes];
 		[self scrollRectToVisible:NSZeroRect];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 	[indexes release];
 }
@@ -1199,7 +1179,6 @@
     if (0 < [self photoCount]) {
         [self setSelectionIndexes:[NSIndexSet indexSetWithIndex:([self photoCount] - 1)]];
         [self scrollRectToVisible:[self gridRectForIndex:([self photoCount] - 1)]];
-        [self setNeedsDisplayInRect:[self visibleRect]];
     }
 }
 
@@ -1210,7 +1189,6 @@
 		[indexes addIndexesInRange:NSMakeRange([indexes lastIndex], ([self photoCount] - [indexes lastIndex]))];
 		[self setSelectionIndexes:indexes];
 		[self scrollRectToVisible:[self gridRectForIndex:[indexes lastIndex]]];
-		[self setNeedsDisplayInRect:[self visibleRect]];
 	}
 }
 
@@ -1440,8 +1418,33 @@
         fastPhoto = [photosFastArray objectAtIndex:index];
         if ((NSNull *)fastPhoto == [NSNull null])
         {
-            fastPhoto = [self scaleImage:[self photoAtIndex:index] toSize:100.0];
+			// Change this if you want higher/lower quality fast photos
+			float fastPhotoSize = 100.0;
+			
+			NSImageRep *fullSizePhotoRep = [[self scalePhoto:[self photoAtIndex:index]] bestRepresentationForDevice:nil];
+	        
+			// Figure out what the scaled size is
+			float longSide = [fullSizePhotoRep pixelsWide];
+	        if (longSide < [fullSizePhotoRep pixelsHigh])
+	            longSide = [fullSizePhotoRep pixelsHigh];
+
+	        float scale = fastPhotoSize / longSide;
+
+	        NSSize scaledSize;
+	        scaledSize.width = [fullSizePhotoRep pixelsWide] * scale;
+	        scaledSize.height = [fullSizePhotoRep pixelsHigh] * scale;
+
+			// Draw the full-size image into our fast, small image.
+	        fastPhoto = [[NSImage alloc] initWithSize:scaledSize];
+	        [fastPhoto setFlipped:YES];
+	        [fastPhoto lockFocus];
+	        [fullSizePhotoRep drawInRect:NSMakeRect(0.0, 0.0, scaledSize.width, scaledSize.height)];
+	        [fastPhoto unlockFocus];
+
+			// Save it off
             [photosFastArray replaceObjectAtIndex:index withObject:fastPhoto];
+			
+			[fastPhoto autorelease];
         }
     } else if ((nil != delegate) && ([delegate respondsToSelector:@selector(photoView:fastPhotoAtIndex:)])) {
         fastPhoto = [delegate photoView:self fastPhotoAtIndex:index];
@@ -1577,10 +1580,34 @@
 
 - (void)setSelectionIndexes:(NSIndexSet *)indexes
 {
+	NSMutableIndexSet *oldSelection = nil;
+	
+	// Set the new selection, but save the old selection so we know exactly what to redraw
     if (nil != [self selectedPhotoIndexes])
-        [self setSelectedPhotoIndexes:indexes];
-    else if (nil != delegate)
-        [delegate photoView:self didSetSelectionIndexes:[delegate photoView:self willSetSelectionIndexes:indexes]];
+    {
+    	oldSelection = [[self selectedPhotoIndexes] retain];
+		[self setSelectedPhotoIndexes:indexes];
+    } 
+	else if (nil != delegate)
+	{
+		// We have to iterate through the photos to figure out which ones the delegate thinks are selected - that's the only way to know the old selection when in delegate mode
+		oldSelection = [[NSMutableIndexSet alloc] init];
+		int i, count = [self photoCount];
+		for( i = 0; i < count; i += 1 )
+		{
+			if ([self isPhotoSelectedAtIndex:i])
+			{
+				[oldSelection addIndex:i];
+			}
+		}
+		
+		// Now update the selection
+		indexes = [delegate photoView:self willSetSelectionIndexes:indexes];
+		[delegate photoView:self didSetSelectionIndexes:indexes];
+	}
+	
+	[self dirtyDisplayRectsForNewSelection:indexes oldSelection:oldSelection];
+	[oldSelection release];
 }
 
 - (NSBezierPath *)shadowBoxPathForRect:(NSRect)rect
@@ -1631,9 +1658,6 @@
     [remaining removeIndexes:modifiedIndexes];
     [self setSelectionIndexes:remaining];
     [remaining release];
-    
-    // redisplay
-    [self setNeedsDisplayInRect:[self visibleRect]];
 }
 
 - (NSImage *)scaleImage:(NSImage *)image toSize:(float)size
@@ -1657,6 +1681,57 @@
     [fastPhoto unlockFocus];
         
     return [fastPhoto autorelease];
+}
+
+- (void)dirtyDisplayRectsForNewSelection:(NSIndexSet *)newSelection oldSelection:(NSIndexSet *)oldSelection
+{
+	NSRect visibleRect = [self visibleRect];
+	
+    // Figure out how the selection changed and only update those areas of the grid
+	NSMutableIndexSet *changedIndexes = [NSMutableIndexSet indexSet];
+	if (oldSelection && newSelection)
+	{
+		// First, see which of the old are different than the new
+		unsigned int index = [newSelection firstIndex];
+		
+		while (index != NSNotFound)
+		{
+			if (![oldSelection containsIndex:index])
+			{
+				[changedIndexes addIndex:index];
+			}
+			index = [newSelection indexGreaterThanIndex:index];
+		}
+			
+		// Next, see which of the new are different from the old
+		index = [oldSelection firstIndex];
+		while (index != NSNotFound)
+		{
+			if (![newSelection containsIndex:index])
+			{
+				[changedIndexes addIndex:index];
+			}
+			index = [oldSelection indexGreaterThanIndex:index];
+		}
+			
+		// Loop through the changes and dirty the rect for each
+		index = [changedIndexes firstIndex];
+		while (index != NSNotFound)
+		{
+			NSRect photoRect = [self gridRectForIndex:index];
+			if (NSIntersectsRect(visibleRect, photoRect))
+			{
+				[self setNeedsDisplayInRect:photoRect];
+			}
+			index = [changedIndexes indexGreaterThanIndex:index];
+		}
+			
+	}
+	else
+	{
+		[self setNeedsDisplayInRect:visibleRect];
+	}
+		
 }
 
 @end

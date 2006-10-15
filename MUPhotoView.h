@@ -265,4 +265,6 @@
 // scaling
 - (NSImage *)scaleImage:(NSImage *)image toSize:(float)size;
 
+// For fast re-drawing during drag and selection
+- (void)dirtyDisplayRectsForNewSelection:(NSIndexSet *)newSelection oldSelection:(NSIndexSet *)oldSelection;
 @end
