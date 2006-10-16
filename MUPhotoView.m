@@ -858,7 +858,8 @@
 {
 	mouseCurrentPoint = [self convertPoint:[[NSApp currentEvent] locationInWindow] fromView:nil];
 	[[self superview] autoscroll:[NSApp currentEvent]];
-	[self setNeedsDisplay:YES];
+	
+    [self mouseDragged:[NSApp currentEvent]];
 }
 
 #pragma mark -
