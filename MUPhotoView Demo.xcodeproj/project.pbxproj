@@ -57,8 +57,8 @@
 		28849C8709E32B58009F2B4F /* Warning Pattern..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Warning Pattern..jpg"; sourceTree = "<group>"; };
 		28849CA809E32C7B009F2B4F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		28849CA909E32C7B009F2B4F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		28C2917809E200DB0019A948 /* MUPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MUPhotoView.h; sourceTree = "<group>"; };
-		28C2917909E200DB0019A948 /* MUPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MUPhotoView.m; sourceTree = "<group>"; };
+		28C2917809E200DB0019A948 /* MUPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MUPhotoView.h; path = MUPhotoView/MUPhotoView.h; sourceTree = "<group>"; };
+		28C2917909E200DB0019A948 /* MUPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MUPhotoView.m; path = MUPhotoView/MUPhotoView.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
