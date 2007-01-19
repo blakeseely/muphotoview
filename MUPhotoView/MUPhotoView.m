@@ -16,7 +16,7 @@
 // Version History:
 //
 // Version 1.0 - April 17, 2006 - Initial Release
-// Version 1.1 - April 29, 2006 - Photo removal support, Added support for reduced-size drawing during live resize
+// Version 1.1 - April 29, 2006 - Photo removal support, Add`d support for reduced-size drawing during live resize
 // Version 1.2 - September 24, 2006 - Updated selection behavior, Changed to MIT license, Fixed issue where no images would show, fixed autoscroll
 
 #import "MUPhotoView.h"
@@ -118,15 +118,15 @@
     // draw the background color
 	[[self backgroundColor] set];
 	[NSBezierPath fillRect:rect];
+    
+    // update internal grid size, adjust height based on the new grid size
+    // because I may not find out that the photos array has changed until I draw and read the photos from the delegate, this call has to stay here
+    [self updateGridAndFrame];
 	
     // get the number of photos
     unsigned photoCount = [self photoCount];
     if (0 == photoCount)
         return;
-
-    // update internal grid size, adjust height based on the new grid size
-    // because I may not find out that the photos array has changed until I draw and read the photos from the delegate, this call has to stay here
-    [self updateGridAndFrame];
 
     // any other setup
     if (useHighQualityResize) {
